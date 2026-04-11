@@ -1,0 +1,128 @@
+============================================================
+POSTO TECH WEBSITE - IMAGE GENERATION PROMPTS
+Quick Reference for Midjourney / DALL-E 3 / Adobe Firefly
+============================================================
+
+⚡ HERO IMAGES (Generate These First)
+-------------------------------------
+
+1. hero-boardroom-executive.jpg
+Midjourney: Ultra-wide angle interior photography of an empty premium executive boardroom, massive 98-inch interactive flat panel display mounted on the main wall showing a subtle blue gradient interface, sleek minimalist black conference table with 12 high-back leather executive chairs, PTZ video conferencing camera mounted above the display, ceiling microphone array visible, floor-to-ceiling windows with soft natural daylight and blurred city skyline view, polished dark walnut flooring, clean cable management, no people visible, professional architectural photography, cool color temperature 5500K, corporate luxury aesthetic, sharp focus, high-end commercial interior --ar 16:9 --v 6 --style raw --q 2
+
+2. hero-classroom-smart.jpg
+Midjourney: Wide angle interior photography of an empty modern smart classroom, large 86-inch interactive flat panel display mounted at the front wall showing educational software interface with blue tones, neatly arranged rows of student desks with clean sightlines to the screen, teacher podium with integrated control system mounted to the side, wall-mounted classroom speakers visible, abundant natural daylight streaming from large side windows, white painted walls, acoustic ceiling panels, no people present, professional educational facility photography, bright and airy atmosphere, clean minimalist school interior, product-focused composition emphasizing the technology --ar 16:9 --v 6 --style raw --q 2
+
+3. hero-training-flexible.jpg
+Midjourney: Wide angle interior photography of an empty flexible corporate training room, 75-inch interactive display mounted on a professional mobile stand with wheels positioned at the front, modular training tables arranged in collaborative pod configurations, ergonomic mesh office chairs, wireless presentation receiver visible on a side table, large windows with natural daylight and white sheer curtains, writable whiteboard wall on one side, modern commercial carpet, no people visible, contemporary corporate training aesthetic, clean professional environment, bright even lighting --ar 16:9 --v 6 --style raw --q 2
+
+🏢 ROOM IMAGES
+--------------
+
+4. room-huddle-space.jpg
+Midjourney: Interior photography of an empty small huddle room, 55-inch interactive display mounted on the wall showing a clean interface, compact round white collaboration table with 4 ergonomic chairs, small wireless sharing device on the table, glass wall with frosted privacy film showing soft blurred office background, minimalist Scandinavian design, light wood accents, potted plant in corner, LED recessed lighting, no people, professional commercial interior photography, clean modern aesthetic, cool neutral tones --ar 16:9 --v 6 --style raw
+
+5. room-meeting-small.jpg
+Midjourney: Interior photography of an empty small meeting room, 65-inch 4K display mounted on the wall showing a video conferencing interface with gallery view, rectangular conference table with 6 ergonomic mesh chairs, compact video soundbar mounted below the display, hidden cable management, neutral gray painted walls, acoustic wall panel on one side, modern pendant lighting, no people visible, professional corporate photography, clean organized aesthetic, soft natural lighting from window --ar 16:9 --v 6 --style raw
+
+6. room-conference-medium.jpg
+Midjourney: Interior photography of an empty medium conference room, 75-inch interactive display on the main wall, professional PTZ camera mounted above the screen, extended microphone array on the conference table, 8-10 high-back ergonomic chairs around a large oval table, modern commercial carpet, acoustic fabric wall panels in blue-gray tones, recessed LED lighting with dimming, no people, professional AV showcase photography, corporate meeting space aesthetic, clean sightlines to screen --ar 16:9 --v 6 --style raw
+
+7. room-boardroom-executive.jpg
+Midjourney: Interior photography of an empty executive boardroom, 86-inch premium interactive display on the main wall showing presentation slides, integrated room control touch panel mounted on the side wall, 12 high-back executive leather chairs in black around a large mahogany conference table, marble accent wall behind the display, ambient cove lighting, motorized window shades, premium wood flooring, no people visible, luxury corporate photography, sophisticated executive environment, warm yet professional lighting --ar 16:9 --v 6 --style raw
+
+8. room-training-flexible.jpg
+Midjourney: Interior photography of an empty flexible training room, multiple 65-inch displays on professional mobile stands with wheels, modular training tables in U-shape configuration, stackable training chairs, presenter podium with gooseneck microphone, ceiling-mounted speakers visible, whiteboard on two walls, large windows with natural light, commercial-grade carpet, no people, professional training facility photography, adaptable workspace design, bright even lighting --ar 16:9 --v 6 --style raw
+
+9. room-collaboration-open.jpg
+Midjourney: Interior photography of an empty open collaboration area in a modern office, 55-inch display on a sleek mobile stand with wheels, comfortable lounge seating with modular sofas and ottomans, writable whiteboard walls on two sides, high-top standing tables, acoustic ceiling baffles, indoor plants, polished concrete floors with area rugs, exposed ceiling with industrial lighting, no people visible, contemporary co-working aesthetic, creative workspace environment, natural daylight --ar 16:9 --v 6 --style raw
+
+10. room-lecture-hall.jpg
+Midjourney: Interior photography of an empty lecture hall or seminar room, large 98-inch interactive display at the front, presenter tracking camera mounted above, presenter podium with confidence monitor, tiered seating with fixed desks and chairs, acoustic wall treatments, professional overhead lighting, projection booth visible at back, no people, professional educational venue photography, university lecture theater aesthetic, clear sightlines to front --ar 16:9 --v 6 --style raw
+
+📦 PRODUCT IMAGES
+-----------------
+
+11. product-display-interactive.jpg
+Midjourney: Product photography of a premium 75-inch interactive flat panel display mounted on a modern office wall, ultra-thin bezels visible, screen showing colorful business presentation with charts and graphs, anti-glare screen surface, slight 3/4 angle to show depth and slim profile, professional meeting room background slightly blurred, soft even lighting, no people, technology product photography, commercial electronics aesthetic, sharp focus on display --ar 16:9 --v 6 --style raw
+
+12. product-smart-board.jpg
+Midjourney: Product photography of an 86-inch interactive smart board in a classroom setting, e-blackboard functionality visible with split screen showing whiteboard app, side panel with writing surface, wall-mounted installation, rows of student desks visible in foreground slightly out of focus, natural classroom lighting, no people, educational technology product photography, clean school environment, emphasis on the smart board as hero product --ar 16:9 --v 6 --style raw
+
+13. product-camera-ptz.jpg
+Midjourney: Product photography of a professional PTZ video conference camera mounted above a large display in a meeting room, camera in sharp focus showing lens and motors, large display showing video call interface slightly blurred in background, wall mounting bracket visible, conference table and chairs in soft focus below, professional AV equipment aesthetic, no people, technology product photography, blue accent lighting, commercial office environment --ar 16:9 --v 6 --style raw
+
+14. product-wireless-sharing.jpg
+Midjourney: Interior photography of a meeting room showing wireless presentation setup, wireless presentation receiver device visible on conference table, laptop nearby suggesting connectivity, large display in background showing shared presentation content with blue theme, modern conference room setting, clean table surface with minimal clutter, no people visible, technology lifestyle photography, seamless wireless connectivity concept, professional corporate environment --ar 16:9 --v 6 --style raw
+
+15. product-room-control.jpg
+Midjourney: Product photography of a wall-mounted room control touch panel, 7-inch touchscreen showing intuitive AV control interface with blue theme, mounted on clean white wall, modern meeting room with display visible in soft focus background, brushed aluminum frame around panel, LED status indicators, professional control system aesthetic, no people, technology product photography, commercial automation interface --ar 16:9 --v 6 --style raw
+
+16. product-infrastructure.jpg
+Midjourney: Technical photography of professional AV infrastructure, equipment rack with mounted AV components, structured cabling neatly organized with cable management, patch panels, video switchers, audio amplifiers, power distribution units, blue LED indicator lights, server room or AV closet environment, clean professional installation, no people, technology infrastructure photography, commercial AV deployment aesthetic --ar 16:9 --v 6 --style raw
+
+🏭 INDUSTRY & ABOUT
+-------------------
+
+17. industry-education.jpg
+Midjourney: Interior photography of an empty education classroom, 75-inch interactive teaching display at the front, rows of student desks, educational posters on walls, bookshelf with learning materials, large windows with natural daylight, whiteboard beside the display, no students or teacher, professional school photography, modern learning environment, bright and inspiring atmosphere --ar 16:9 --v 6 --style raw
+
+18. industry-enterprise.jpg
+Midjourney: Interior photography of an empty premium corporate boardroom, large interactive display on the wall, executive conference table with high-back chairs, company logo subtly visible on wall, floor-to-ceiling windows with city view, professional corporate photography, modern enterprise environment, sophisticated business aesthetic, no people --ar 16:9 --v 6 --style raw
+
+19. industry-government.jpg
+Midjourney: Interior photography of an empty government meeting room, formal committee table with leather chairs, large display for presentations, official seal or emblem on wall, American or generic flags in corner, wood paneling, professional government facility photography, official meeting space aesthetic, no people, dignified formal environment --ar 16:9 --v 6 --style raw
+
+20. industry-training.jpg
+Midjourney: Interior photography of an empty professional training center, multiple displays on mobile stands, training workstations with computers, instructor area with podium, large whiteboard wall, corporate training materials on shelves, professional development facility photography, modern training environment, no people, clean organized workspace --ar 16:9 --v 6 --style raw
+
+21. about-workspace.jpg
+Midjourney: Interior photography of a premium modern workspace, clean minimalist desk with integrated technology, large display on wall showing productivity dashboard, ergonomic office chair, indoor plants, natural daylight from large windows, white walls with subtle texture, professional corporate interior photography, aspirational workplace aesthetic, collaborative technology environment, no people, sophisticated yet comfortable --ar 16:9 --v 6 --style raw
+
+============================================================
+DALL-E 3 ALTERNATIVES
+============================================================
+
+For DALL-E 3, use the same descriptions but format as a single paragraph. Example:
+
+"A professional ultra-wide angle photograph of an empty premium executive boardroom. The room features a massive 98-inch interactive flat panel display mounted on the main wall showing a subtle blue gradient interface. A sleek minimalist black conference table with 12 high-back leather executive chairs sits in the center. A PTZ video conferencing camera is mounted above the display, and a ceiling microphone array is visible. Floor-to-ceiling windows provide soft natural daylight with a blurred city skyline view. Polished dark walnut flooring and clean cable management. No people are visible. Professional architectural photography with cool color temperature, corporate luxury aesthetic, sharp focus, high-end commercial interior. 16:9 aspect ratio."
+
+============================================================
+FILE NAMING - SAVE AS:
+============================================================
+
+assets/images/hero/hero-boardroom-executive.jpg
+assets/images/hero/hero-classroom-smart.jpg
+assets/images/hero/hero-training-flexible.jpg
+
+assets/images/rooms/room-huddle-space.jpg
+assets/images/rooms/room-meeting-small.jpg
+assets/images/rooms/room-conference-medium.jpg
+assets/images/rooms/room-boardroom-executive.jpg
+assets/images/rooms/room-training-flexible.jpg
+assets/images/rooms/room-collaboration-open.jpg
+assets/images/rooms/room-lecture-hall.jpg
+
+assets/images/products/product-display-interactive.jpg
+assets/images/products/product-smart-board.jpg
+assets/images/products/product-camera-ptz.jpg
+assets/images/products/product-wireless-sharing.jpg
+assets/images/products/product-room-control.jpg
+assets/images/products/product-infrastructure.jpg
+
+assets/images/industries/industry-education.jpg
+assets/images/industries/industry-enterprise.jpg
+assets/images/industries/industry-government.jpg
+assets/images/industries/industry-training.jpg
+
+assets/images/about/about-workspace.jpg
+
+============================================================
+GENERATION TIPS:
+============================================================
+
+1. Generate Hero images FIRST (most important)
+2. Use --no people, humans, persons in Midjourney
+3. All images should be 16:9 aspect ratio
+4. Save with exact filenames listed above
+5. Review each image for quality before saving
+6. Regenerate any images that show people or poor quality
