@@ -5,317 +5,526 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Room Solutions for Business & Education in Pakistan | POSTO Tech</title>
     <meta name="description" content="Explore room-based AV solutions in Pakistan for huddle spaces, meeting rooms, boardrooms, smart classrooms, training rooms, and lecture environments.">
-    <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://www.postolabs.com/solutions.html">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="POSTO Tech">
-    <meta property="og:title" content="Room Solutions for Business & Education in Pakistan | POSTO Tech">
-    <meta property="og:description" content="Business and education room solution mapping for AV, collaboration, teaching, and training spaces.">
-    <meta property="og:url" content="https://www.postolabs.com/solutions.html">
-    <meta property="og:image" content="https://www.postolabs.com/assets/images/rooms/room-meeting-small.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="POSTO Tech Room Solutions Pakistan">
-    <meta name="twitter:description" content="Compare business and education room solution types for AV and collaboration deployment in Pakistan.">
-    <meta name="twitter:image" content="https://www.postolabs.com/assets/images/rooms/room-meeting-small.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/site.css">
 </head>
-<body class="text-slate-800 antialiased selection:bg-blue-200 selection:text-blue-900">
-    <nav class="fixed inset-x-0 top-0 z-50 border-b border-white/60 bg-white/80 backdrop-blur-2xl">
-        <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-            <a href="index.html" class="group flex items-center gap-2 text-3xl font-extrabold tracking-tight">
-                <span class="text-slate-950 transition group-hover:text-blue-600">POSTO</span>
-                <span class="text-blue-600 transition group-hover:text-slate-950">Tech</span>
+<body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-200 selection:text-blue-900">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Offset for fixed header when scrolling to anchors */
+        section[id] {
+            scroll-margin-top: 6rem;
+        }
+        .logo-mark { transition: transform 0.3s ease; }
+        .logo-mark rect { transition: all 0.3s ease; }
+        a:hover .logo-mark { transform: scale(1.05); }
+        a:hover .logo-mark rect:nth-child(1) { fill: #3b82f6; }
+        a:hover .logo-mark rect:nth-child(2) { fill: #0f172a; }
+        a:hover .logo-mark rect:nth-child(3) { fill: #0f172a; }
+        a:hover .logo-mark rect:nth-child(4) { fill: #3b82f6; }
+    </style>
+
+    <!-- Navigation -->
+    <nav class="fixed inset-x-0 top-0 z-50 border-b border-white/20 bg-white/70 backdrop-blur-xl">
+        <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
+            <a href="index.html" class="group flex items-center gap-3">
+                <svg class="logo-mark h-10 w-10 drop-shadow-lg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoDark" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+                        </linearGradient>
+                        <linearGradient id="logoBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect x="4" y="4" width="14" height="14" rx="3" fill="url(#logoDark)"/>
+                    <rect x="22" y="4" width="14" height="14" rx="3" fill="url(#logoBlue)"/>
+                    <rect x="4" y="22" width="14" height="14" rx="3" fill="url(#logoBlue)"/>
+                    <rect x="22" y="22" width="14" height="14" rx="3" fill="url(#logoDark)"/>
+                </svg>
+                <span class="text-2xl font-extrabold tracking-tight">
+                    <span class="bg-gradient-to-r from-slate-950 to-slate-700 bg-clip-text text-transparent">POSTO</span><span class="text-blue-600">Tech</span>
+                </span>
             </a>
-            <div class="hidden items-center gap-10 md:flex">
-                <a href="products.html" class="nav-link text-sm font-semibold tracking-wide">Products</a>
-                <a href="solutions.html" class="nav-link active text-sm font-semibold tracking-wide">Solutions</a>
-                <a href="business-solutions.html" class="nav-link text-sm font-semibold tracking-wide">Enterprise</a>
-                <a href="about.html" class="nav-link text-sm font-semibold tracking-wide">About</a>
-                <a href="contact.html" class="nav-link text-sm font-semibold tracking-wide">Contact</a>
+            <div class="hidden items-center gap-8 md:flex">
+                <a href="products.html" class="text-sm font-medium text-slate-600 transition hover:text-blue-600">Products</a>
+                <a href="solutions.html" class="text-sm font-bold text-blue-600">Solutions</a>
+                <a href="business-solutions.html" class="text-sm font-medium text-slate-600 transition hover:text-blue-600">Enterprise</a>
+                <a href="about.html" class="text-sm font-medium text-slate-600 transition hover:text-blue-600">About</a>
+                <a href="contact.html" class="text-sm font-medium text-slate-600 transition hover:text-blue-600">Contact</a>
             </div>
-            <a href="contact.html" class="group relative overflow-hidden rounded-full bg-slate-950 px-6 py-3 text-sm font-semibold text-white transition-all hover:shadow-lg hover:shadow-blue-500/25">
-                <span class="relative z-10">Request Consultation</span>
-                <div class="absolute inset-0 -translate-x-full bg-gradient-to-r from-blue-600 to-blue-500 transition-transform duration-300 group-hover:translate-x-0"></div>
+            <a href="contact.html" class="hidden rounded-full bg-slate-950 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-600 md:block">
+                Get in Touch
             </a>
-        </div>
-        <div class="border-t border-slate-200/70 bg-white/90 md:hidden">
-            <div class="mx-auto flex max-w-7xl items-center gap-5 overflow-x-auto px-4 py-3 text-xs font-semibold text-slate-600">
-                <a href="index.html" class="whitespace-nowrap">Home</a>
-                <a href="business-solutions.html" class="whitespace-nowrap">Enterprise</a>
-                <a href="solutions.html" class="whitespace-nowrap text-blue-600">Solutions</a>
-                <a href="products.html" class="whitespace-nowrap">Products</a>
-                <a href="about.html" class="whitespace-nowrap">About</a>
-                <a href="contact.html" class="whitespace-nowrap">Contact</a>
-            </div>
         </div>
     </nav>
 
-    <main class="pt-32 md:pt-24">
-        <section class="px-4 pb-10 pt-6 sm:px-6 lg:px-8">
-            <div class="mx-auto max-w-7xl overflow-hidden rounded-[2.5rem] hero-panel px-10 py-20 halo-shadow md:px-14 lg:px-20 lg:py-28">
-                <div class="max-w-4xl" data-reveal>
-                    <div class="mb-6 inline-flex items-center gap-3 rounded-full border border-blue-400/30 bg-blue-500/10 px-4 py-2 backdrop-blur-sm">
-                        <span class="status-dot"></span>
-                        <span class="text-xs font-semibold uppercase tracking-widest text-blue-200">Solutions</span>
+    <main class="pt-20">
+        
+        <!-- Hero -->
+        <section class="relative h-[65vh] min-h-[500px] overflow-hidden">
+            <img src="assets/images/rooms/room-meeting-small.jpg" 
+                 alt="Meeting room" 
+                 class="absolute inset-0 h-full w-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-slate-950/40"></div>
+            <div class="relative flex h-full items-end">
+                <div class="mx-auto w-full max-w-7xl px-6 pb-16 lg:px-8">
+                    <div class="max-w-3xl">
+                        <p class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-blue-300">Room Solutions</p>
+                        <h1 class="text-4xl font-extrabold leading-[1.05] tracking-tight text-white md:text-5xl lg:text-6xl">
+                            Purpose-built for every space
+                        </h1>
+                        <p class="mt-6 max-w-xl text-lg text-slate-300">
+                            From huddle rooms to lecture halls. Two solution streams, one consistent standard of quality.
+                        </p>
                     </div>
-                    <h1 class="text-4xl font-extrabold leading-[1.05] text-white md:text-6xl lg:text-7xl">
-                        Business and education room solutions in Pakistan for <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">clear AV planning</span>.
-                    </h1>
-                    <p class="mt-8 max-w-3xl text-lg leading-relaxed text-slate-300 md:text-xl">
-                        Business Solutions are built for enterprise and government collaboration. Education Solutions are built for teaching, learning, and institutional training.
-                    </p>
                 </div>
             </div>
         </section>
 
-        <section class="px-4 py-10 sm:px-6 lg:px-8">
+        <!-- Solution Streams -->
+        <section class="bg-white px-6 py-20 lg:px-8">
             <div class="mx-auto max-w-7xl">
-                <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
-                    <a href="#business-solutions" data-reveal class="reveal-ready group rounded-[2.25rem] section-panel border border-white/80 p-8 soft-shadow transition-all hover:shadow-xl">
-                        <p class="eyebrow text-xs font-semibold text-blue-600">Stream 01</p>
-                        <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-slate-950">Business Solutions</h2>
-                        <p class="mt-4 leading-relaxed text-slate-600">
-                            AV systems for offices, meeting rooms, boardrooms, conference rooms, and institutional collaboration spaces.
+                <div class="grid gap-6 lg:grid-cols-2">
+                    
+                    <!-- Business -->
+                    <div class="group relative overflow-hidden rounded-[2rem] bg-slate-950 p-10 text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-900/25">
+                        <div class="pointer-events-none absolute inset-0 bg-gradient-to-br from-blue-600/20 to-transparent opacity-0 transition duration-500 group-hover:opacity-100"></div>
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-blue-300">Stream 01</p>
+                        <h2 class="mt-4 text-3xl font-bold tracking-tight">Business Solutions</h2>
+                        <p class="mt-4 text-slate-400">
+                            AV systems for offices, meeting rooms, boardrooms, and enterprise collaboration spaces.
                         </p>
-                        <p class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-blue-600">
-                            Jump to Business
-                            <svg class="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                            </svg>
+                        <ul class="mt-6 space-y-3 text-slate-300">
+                            <li class="flex items-center gap-2">
+                                <svg class="h-5 w-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                Huddle spaces & meeting rooms
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="h-5 w-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                Executive boardrooms
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="h-5 w-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                Conference & training spaces
+                            </li>
+                        </ul>
+                        <a href="#business" class="mt-8 inline-flex items-center gap-2 text-sm font-bold text-white">
+                            View Business Solutions
+                            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="group relative overflow-hidden rounded-[2rem] bg-slate-900 p-10 text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-cyan-900/25">
+                        <div class="pointer-events-none absolute inset-0 bg-gradient-to-br from-cyan-600/20 to-transparent opacity-0 transition duration-500 group-hover:opacity-100"></div>
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-cyan-300">Stream 02</p>
+                        <h2 class="mt-4 text-3xl font-bold tracking-tight">Education Solutions</h2>
+                        <p class="mt-4 text-slate-400">
+                            Smart classrooms and training environments for schools, universities, and academic institutions.
                         </p>
-                    </a>
-                    <a href="#education-solutions" data-reveal class="reveal-ready group rounded-[2.25rem] dark-panel p-8 halo-shadow transition-all hover:shadow-xl">
-                        <p class="eyebrow text-xs font-semibold text-blue-300">Stream 02</p>
-                        <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-white">Education Solutions</h2>
-                        <p class="mt-4 leading-relaxed text-slate-300">
-                            Smart classroom and training environments for schools, universities, colleges, and academic institutions.
-                        </p>
-                        <p class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-cyan-300">
-                            Jump to Education
-                            <svg class="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                            </svg>
-                        </p>
-                    </a>
+                        <ul class="mt-6 space-y-3 text-slate-300">
+                            <li class="flex items-center gap-2">
+                                <svg class="h-5 w-5 text-cyan-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                Smart classrooms
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="h-5 w-5 text-cyan-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                Lecture & seminar rooms
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="h-5 w-5 text-cyan-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                Training labs
+                            </li>
+                        </ul>
+                        <a href="#education" class="mt-8 inline-flex items-center gap-2 text-sm font-bold text-white">
+                            View Education Solutions
+                            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <section id="business-solutions" class="px-4 py-12 sm:px-6 lg:px-8">
+        <!-- Sticky Mini Navigation -->
+        <section class="hidden lg:block bg-white/70 px-6 py-5 backdrop-blur-sm lg:px-8">
             <div class="mx-auto max-w-7xl">
-                <div class="mb-12 text-center">
-                    <p class="eyebrow text-xs font-semibold text-blue-600">Business Solutions</p>
-                    <h2 class="mx-auto mt-4 max-w-3xl text-4xl font-extrabold tracking-tight text-slate-950">
-                        Room systems for <span class="text-gradient">enterprise collaboration</span>.
+                <div class="sticky top-24 z-30 flex items-center justify-center">
+                    <nav class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/90 p-2 soft-shadow">
+                        <a href="#business" class="rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-wider text-slate-600 transition hover:bg-blue-50 hover:text-blue-700">Business</a>
+                        <a href="#education" class="rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-wider text-slate-600 transition hover:bg-cyan-50 hover:text-cyan-700">Education</a>
+                        <a href="#who-we-serve" class="rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-wider text-slate-600 transition hover:bg-blue-50 hover:text-blue-700">Who We Serve</a>
+                        <a href="#next-step" class="rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-wider text-slate-600 transition hover:bg-cyan-50 hover:text-cyan-700">Next Step</a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Solutions Detail -->
+        <section id="business" class="bg-gradient-to-b from-slate-50 to-white px-6 py-20 lg:px-8">
+            <div class="mx-auto max-w-7xl">
+                <div class="text-center">
+                    <p class="text-xs font-bold uppercase tracking-[0.3em] text-blue-600">Business Solutions</p>
+                    <h2 class="mt-4 text-4xl font-extrabold tracking-tight text-slate-950 md:text-5xl">
+                        Enterprise collaboration spaces
                     </h2>
-                    <p class="mx-auto mt-5 max-w-3xl text-lg text-slate-600">
-                        Built for corporate teams, leadership rooms, and institutional operations where uptime and ease of use are essential.
-                    </p>
                 </div>
 
-                <div class="mb-8 grid grid-cols-1 gap-6 md:grid-cols-3">
-                    <article data-reveal class="reveal-ready rounded-[2rem] bg-gradient-to-br from-blue-600 to-blue-800 p-7 text-white soft-shadow">
-                        <h3 class="text-xl font-bold">Deployment</h3>
-                        <p class="mt-3 text-sm leading-relaxed text-blue-100">Structured rollout for single rooms, campuses, and multi-site deployments.</p>
-                    </article>
-                    <article data-reveal class="reveal-ready rounded-[2rem] section-panel border border-white/80 p-7 soft-shadow">
-                        <h3 class="text-xl font-bold text-slate-950">Integration</h3>
-                        <p class="mt-3 text-sm leading-relaxed text-slate-600">Displays, conferencing, audio, and sharing tools aligned into one practical system.</p>
-                    </article>
-                    <article data-reveal class="reveal-ready rounded-[2rem] section-panel border border-white/80 p-7 soft-shadow">
-                        <h3 class="text-xl font-bold text-slate-950">Support</h3>
-                        <p class="mt-3 text-sm leading-relaxed text-slate-600">User training, technical handover, and after-sales support to sustain room performance.</p>
-                    </article>
-                </div>
+                <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    
+                    <!-- Huddle -->
+                    <div class="group overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl">
+                        <div class="aspect-[16/10] overflow-hidden">
+                            <img src="assets/images/rooms/room-huddle-space.jpg" 
+                                 alt="Huddle space" 
+                                 class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Small Team</span>
+                            <h3 class="mt-2 text-xl font-bold">Huddle Spaces</h3>
+                            <p class="mt-2 text-sm text-slate-600">Quick syncs and daily team decisions. 3-4 person capacity.</p>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="inline-flex items-center gap-1 rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700">
+                                    <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5V4H2v16h5m10 0v-2a3 3 0 00-3-3H10a3 3 0 00-3 3v2m10 0H7m10-9a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                    3-4 People
+                                </span>
+                                <span class="inline-flex items-center gap-1 rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700">
+                                    <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                                    55-65"
+                                </span>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-600">55-65" display</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-600">Wireless share</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-600">Built-in camera</span>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-                    <article data-reveal class="reveal-ready group overflow-hidden rounded-[2rem] bg-white soft-shadow">
-                        <div class="relative h-52 overflow-hidden">
-                            <img src="assets/images/rooms/room-huddle-space.jpg" alt="Empty huddle space with 55-inch interactive display and compact collaboration setup" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 to-transparent"></div>
+                    <!-- Meeting -->
+                    <div class="group overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl">
+                        <div class="aspect-[16/10] overflow-hidden">
+                            <img src="assets/images/rooms/room-meeting-small.jpg" 
+                                 alt="Meeting room" 
+                                 class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
                         </div>
-                        <div class="p-7">
-                            <h3 class="text-xl font-bold text-slate-950">Huddle Spaces</h3>
-                            <p class="mt-2 text-sm text-slate-600">For quick syncs, short reviews, and daily team decisions.</p>
-                            <p class="mt-4 text-sm text-slate-700"><span class="font-bold">Typical system:</span> 55&quot;-65&quot; display, built-in camera/mic, wireless share.</p>
+                        <div class="p-6">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Medium Team</span>
+                            <h3 class="mt-2 text-xl font-bold">Meeting Rooms</h3>
+                            <p class="mt-2 text-sm text-slate-600">Recurring team meetings and hybrid collaboration. 6-10 person capacity.</p>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="inline-flex items-center gap-1 rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700">
+                                    <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5V4H2v16h5m10 0v-2a3 3 0 00-3-3H10a3 3 0 00-3 3v2m10 0H7"/></svg>
+                                    6-10 People
+                                </span>
+                                <span class="inline-flex items-center gap-1 rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700">
+                                    <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18"/></svg>
+                                    65-75"
+                                </span>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-600">65-75" display</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-600">Video bar</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-600">Wireless presentation</span>
+                            </div>
                         </div>
-                    </article>
+                    </div>
 
-                    <article data-reveal class="reveal-ready group overflow-hidden rounded-[2rem] bg-white soft-shadow">
-                        <div class="relative h-52 overflow-hidden">
-                            <img src="assets/images/rooms/room-meeting-small.jpg" alt="Empty meeting room with 65-inch display and video conferencing setup" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 to-transparent"></div>
+                    <!-- Boardroom -->
+                    <div class="group overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl">
+                        <div class="aspect-[16/10] overflow-hidden">
+                            <img src="assets/images/rooms/room-boardroom-executive.jpg" 
+                                 alt="Boardroom" 
+                                 class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
                         </div>
-                        <div class="p-7">
-                            <h3 class="text-xl font-bold text-slate-950">Meeting Rooms</h3>
-                            <p class="mt-2 text-sm text-slate-600">For recurring team meetings and hybrid collaboration.</p>
-                            <p class="mt-4 text-sm text-slate-700"><span class="font-bold">Typical system:</span> 65&quot;-75&quot; display, video bar, wireless presentation.</p>
+                        <div class="p-6">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Executive</span>
+                            <h3 class="mt-2 text-xl font-bold">Executive Boardrooms</h3>
+                            <p class="mt-2 text-sm text-slate-600">Leadership meetings and high-stakes presentations. 12-20 person capacity.</p>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="inline-flex items-center gap-1 rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700">
+                                    <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5V4H2v16h5m10 0v-2a3 3 0 00-3-3H10a3 3 0 00-3 3v2m10 0H7"/></svg>
+                                    12-20 People
+                                </span>
+                                <span class="inline-flex items-center gap-1 rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700">
+                                    <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18"/></svg>
+                                    86-98"
+                                </span>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-600">86-98" display</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-600">PTZ cameras</span>
+                                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-600">Ceiling mics</span>
+                            </div>
                         </div>
-                    </article>
+                    </div>
 
-                    <article data-reveal class="reveal-ready group overflow-hidden rounded-[2rem] bg-white soft-shadow">
-                        <div class="relative h-52 overflow-hidden">
-                            <img src="assets/images/rooms/room-boardroom-executive.jpg" alt="Empty executive boardroom with 86-inch premium display and ceiling microphone array" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 to-transparent"></div>
-                        </div>
-                        <div class="p-7">
-                            <h3 class="text-xl font-bold text-slate-950">Executive Boardrooms</h3>
-                            <p class="mt-2 text-sm text-slate-600">For leadership meetings and high-stakes presentations.</p>
-                            <p class="mt-4 text-sm text-slate-700"><span class="font-bold">Typical system:</span> 86&quot;-98&quot; display, PTZ cameras, ceiling mics, room control.</p>
-                        </div>
-                    </article>
                 </div>
             </div>
         </section>
 
-        <section id="education-solutions" class="px-4 py-12 sm:px-6 lg:px-8">
+        <!-- Education Solutions Detail -->
+        <section id="education" class="bg-white px-6 py-20 lg:px-8">
             <div class="mx-auto max-w-7xl">
-                <div class="mb-12 text-center">
-                    <p class="eyebrow text-xs font-semibold text-blue-600">Education Solutions</p>
-                    <h2 class="mx-auto mt-4 max-w-3xl text-4xl font-extrabold tracking-tight text-slate-950">
-                        Learning environments built for <span class="text-gradient">clarity and participation</span>.
+                <div class="text-center">
+                    <p class="text-xs font-bold uppercase tracking-[0.3em] text-cyan-600">Education Solutions</p>
+                    <h2 class="mt-4 text-4xl font-extrabold tracking-tight text-slate-950 md:text-5xl">
+                        Learning environments that engage
                     </h2>
-                    <p class="mx-auto mt-5 max-w-3xl text-lg text-slate-600">
-                        Designed for schools, universities, and training institutes that need consistent teaching delivery and practical classroom control.
-                    </p>
                 </div>
 
-                <div class="mb-8 grid grid-cols-1 gap-6 md:grid-cols-3">
-                    <article data-reveal class="reveal-ready rounded-[2rem] section-panel border border-white/80 p-7 soft-shadow">
-                        <h3 class="text-xl font-bold text-slate-950">Interactive Teaching</h3>
-                        <p class="mt-3 text-sm leading-relaxed text-slate-600">Interactive panels and e-blackboard options for clearer, more visual instruction.</p>
-                    </article>
-                    <article data-reveal class="reveal-ready rounded-[2rem] section-panel border border-white/80 p-7 soft-shadow">
-                        <h3 class="text-xl font-bold text-slate-950">Hybrid-Ready</h3>
-                        <p class="mt-3 text-sm leading-relaxed text-slate-600">Classroom AV that supports blended learning, lecture capture, and remote participation.</p>
-                    </article>
-                    <article data-reveal class="reveal-ready rounded-[2rem] bg-slate-950 p-7 text-white halo-shadow">
-                        <h3 class="text-xl font-bold">Operational Simplicity</h3>
-                        <p class="mt-3 text-sm leading-relaxed text-slate-300">Simple controls for faculty and repeatable room standards for IT teams.</p>
-                    </article>
-                </div>
+                <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    
+                    <!-- Smart Classroom -->
+                    <div class="group overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-300 hover:-translate-y-1 hover:border-cyan-200 hover:shadow-xl">
+                        <div class="aspect-[16/10] overflow-hidden">
+                            <img src="assets/images/industries/industry-education.jpg" 
+                                 alt="Smart classroom" 
+                                 class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-cyan-600">Primary</span>
+                            <h3 class="mt-2 text-xl font-bold">Smart Classrooms</h3>
+                            <p class="mt-2 text-sm text-slate-600">Daily teaching rooms with interactive lesson delivery. 30-40 student capacity.</p>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="inline-flex items-center gap-1 rounded-full bg-cyan-50 px-3 py-1 text-xs font-medium text-cyan-700">
+                                    <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5V4H2v16h5m10 0v-2a3 3 0 00-3-3H10a3 3 0 00-3 3v2m10 0H7"/></svg>
+                                    30-40 Students
+                                </span>
+                                <span class="inline-flex items-center gap-1 rounded-full bg-cyan-50 px-3 py-1 text-xs font-medium text-cyan-700">
+                                    <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18"/></svg>
+                                    75-86"
+                                </span>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="rounded-full bg-cyan-50 px-3 py-1 text-xs text-cyan-700">75-86" panel</span>
+                                <span class="rounded-full bg-cyan-50 px-3 py-1 text-xs text-cyan-700">Classroom audio</span>
+                                <span class="rounded-full bg-cyan-50 px-3 py-1 text-xs text-cyan-700">Content share</span>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-                    <article data-reveal class="reveal-ready group overflow-hidden rounded-[2rem] bg-white soft-shadow">
-                        <div class="relative h-52 overflow-hidden">
-                            <img src="assets/images/industries/industry-education.jpg" alt="Smart classroom AV setup with 75-inch interactive teaching display for education" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 to-transparent"></div>
+                    <!-- Training -->
+                    <div class="group overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-300 hover:-translate-y-1 hover:border-cyan-200 hover:shadow-xl">
+                        <div class="aspect-[16/10] overflow-hidden">
+                            <img src="assets/images/rooms/room-training-flexible.jpg" 
+                                 alt="Training room" 
+                                 class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
                         </div>
-                        <div class="p-7">
-                            <h3 class="text-xl font-bold text-slate-950">Smart Classrooms</h3>
-                            <p class="mt-2 text-sm text-slate-600">Daily teaching rooms with interactive lesson delivery.</p>
-                            <p class="mt-4 text-sm text-slate-700"><span class="font-bold">Typical system:</span> 75&quot;-86&quot; interactive panel, classroom audio, wireless content share.</p>
+                        <div class="p-6">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-cyan-600">Flexible</span>
+                            <h3 class="mt-2 text-xl font-bold">Training Rooms</h3>
+                            <p class="mt-2 text-sm text-slate-600">Flexible spaces for workshops, labs, and instructor training. 15-30 person capacity.</p>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="inline-flex items-center gap-1 rounded-full bg-cyan-50 px-3 py-1 text-xs font-medium text-cyan-700">
+                                    <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5V4H2v16h5m10 0v-2a3 3 0 00-3-3H10a3 3 0 00-3 3v2m10 0H7"/></svg>
+                                    15-30 Learners
+                                </span>
+                                <span class="inline-flex items-center gap-1 rounded-full bg-cyan-50 px-3 py-1 text-xs font-medium text-cyan-700">
+                                    <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"/></svg>
+                                    Flexible Layout
+                                </span>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="rounded-full bg-cyan-50 px-3 py-1 text-xs text-cyan-700">Mobile smart board</span>
+                                <span class="rounded-full bg-cyan-50 px-3 py-1 text-xs text-cyan-700">Modular layout</span>
+                                <span class="rounded-full bg-cyan-50 px-3 py-1 text-xs text-cyan-700">Multi-device share</span>
+                            </div>
                         </div>
-                    </article>
+                    </div>
 
-                    <article data-reveal class="reveal-ready group overflow-hidden rounded-[2rem] bg-white soft-shadow">
-                        <div class="relative h-52 overflow-hidden">
-                            <img src="assets/images/rooms/room-training-flexible.jpg" alt="Training room AV setup with flexible teaching layout and mobile displays" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 to-transparent"></div>
+                    <!-- Lecture Hall -->
+                    <div class="group overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-300 hover:-translate-y-1 hover:border-cyan-200 hover:shadow-xl">
+                        <div class="aspect-[16/10] overflow-hidden">
+                            <img src="assets/images/rooms/room-lecture-hall.jpg" 
+                                 alt="Lecture hall" 
+                                 class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
                         </div>
-                        <div class="p-7">
-                            <h3 class="text-xl font-bold text-slate-950">Training Rooms</h3>
-                            <p class="mt-2 text-sm text-slate-600">Flexible spaces for workshops, labs, and instructor training.</p>
-                            <p class="mt-4 text-sm text-slate-700"><span class="font-bold">Typical system:</span> mobile smart board, modular layout, multi-device wireless sharing.</p>
+                        <div class="p-6">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-cyan-600">Large Format</span>
+                            <h3 class="mt-2 text-xl font-bold">Lecture & Seminar Rooms</h3>
+                            <p class="mt-2 text-sm text-slate-600">Larger rooms for lectures, seminars, and content capture. 40+ person capacity.</p>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="inline-flex items-center gap-1 rounded-full bg-cyan-50 px-3 py-1 text-xs font-medium text-cyan-700">
+                                    <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5V4H2v16h5m10 0v-2a3 3 0 00-3-3H10a3 3 0 00-3 3v2m10 0H7"/></svg>
+                                    40+ Audience
+                                </span>
+                                <span class="inline-flex items-center gap-1 rounded-full bg-cyan-50 px-3 py-1 text-xs font-medium text-cyan-700">
+                                    <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18"/></svg>
+                                    Large Format
+                                </span>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="rounded-full bg-cyan-50 px-3 py-1 text-xs text-cyan-700">Large display</span>
+                                <span class="rounded-full bg-cyan-50 px-3 py-1 text-xs text-cyan-700">Tracking camera</span>
+                                <span class="rounded-full bg-cyan-50 px-3 py-1 text-xs text-cyan-700">Lecture capture</span>
+                            </div>
                         </div>
-                    </article>
+                    </div>
 
-                    <article data-reveal class="reveal-ready group overflow-hidden rounded-[2rem] bg-white soft-shadow">
-                        <div class="relative h-52 overflow-hidden">
-                            <img src="assets/images/rooms/room-lecture-hall.jpg" alt="Lecture and seminar room with large-format display and presenter tracking camera" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 to-transparent"></div>
-                        </div>
-                        <div class="p-7">
-                            <h3 class="text-xl font-bold text-slate-950">Lecture & Seminar Rooms</h3>
-                            <p class="mt-2 text-sm text-slate-600">Larger rooms for lectures, seminars, and content capture.</p>
-                            <p class="mt-4 text-sm text-slate-700"><span class="font-bold">Typical system:</span> large-format display, presenter tracking camera, lecture AV support.</p>
-                        </div>
-                    </article>
                 </div>
             </div>
         </section>
 
-        <section class="px-4 py-16 sm:px-6 lg:px-8">
-            <div class="mx-auto max-w-7xl rounded-[2.5rem] bg-gradient-to-br from-blue-600 via-blue-700 to-cyan-700 p-12 text-center md:p-16 halo-shadow">
-                <p class="eyebrow text-xs font-semibold text-blue-100">Next Step</p>
-                <h2 class="mt-4 text-3xl font-extrabold text-white md:text-4xl">
-                    Share your room list and we will map the right solution stream.
-                </h2>
-                <p class="mx-auto mt-5 max-w-3xl text-lg text-blue-100">
-                    Tell us your room types, user profile, and scope. We will recommend a practical rollout path for business or education environments.
-                </p>
-                <div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-                    <a href="contact.html" class="group relative overflow-hidden rounded-full bg-white px-8 py-4 text-sm font-bold text-blue-700 transition-all hover:shadow-xl">
-                        <span class="relative z-10 flex items-center gap-2">
-                            Request Consultation
-                            <svg class="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                            </svg>
-                        </span>
-                    </a>
-                    <a href="products.html" class="rounded-full border border-white/30 bg-white/10 px-8 py-4 text-sm font-bold text-white backdrop-blur-sm transition-all hover:bg-white/20">
-                        Explore Products
-                    </a>
+        <!-- Who We Serve -->
+        <section id="who-we-serve" class="bg-slate-50 px-6 py-20 lg:px-8">
+            <div class="mx-auto max-w-7xl overflow-hidden rounded-[2.5rem] border border-blue-100 bg-gradient-to-br from-white via-slate-50 to-blue-50/70 p-10 text-slate-900 soft-shadow md:p-16">
+                <div class="grid gap-12 lg:grid-cols-2">
+                    <div>
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-blue-600">Who We Serve</p>
+                        <h2 class="mt-4 text-3xl font-extrabold tracking-tight text-slate-950 md:text-4xl">
+                            Built for organizations that demand reliability
+                        </h2>
+                        <div class="mt-8 grid grid-cols-2 gap-4">
+                            <div class="rounded-xl border border-blue-100 bg-white p-4">
+                                <p class="text-3xl font-extrabold text-slate-950">50+</p>
+                                <p class="text-sm text-slate-600">Enterprise Clients</p>
+                            </div>
+                            <div class="rounded-xl border border-blue-100 bg-white p-4">
+                                <p class="text-3xl font-extrabold text-slate-950">200+</p>
+                                <p class="text-sm text-slate-600">Rooms Deployed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid gap-4 sm:grid-cols-2">
+                        <div class="rounded-xl border border-blue-100 bg-white p-5">
+                            <h4 class="font-semibold text-slate-950">Corporate Offices</h4>
+                            <p class="mt-1 text-sm text-slate-600">Meeting spaces that improve collaboration</p>
+                        </div>
+                        <div class="rounded-xl border border-blue-100 bg-white p-5">
+                            <h4 class="font-semibold text-slate-950">Government</h4>
+                            <p class="mt-1 text-sm text-slate-600">Secure, reliable briefing rooms</p>
+                        </div>
+                        <div class="rounded-xl border border-blue-100 bg-white p-5">
+                            <h4 class="font-semibold text-slate-950">Universities</h4>
+                            <p class="mt-1 text-sm text-slate-600">Campus-wide AV deployment</p>
+                        </div>
+                        <div class="rounded-xl border border-blue-100 bg-white p-5">
+                            <h4 class="font-semibold text-slate-950">Training Centers</h4>
+                            <p class="mt-1 text-sm text-slate-600">Flexible learning environments</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- CTA -->
+        <section id="next-step" class="bg-white px-6 py-20 lg:px-8">
+            <div class="mx-auto max-w-7xl overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-slate-950 via-blue-950 to-cyan-950 halo-shadow">
+                <div class="grid lg:grid-cols-2">
+                    <div class="p-10 text-white lg:p-16">
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-cyan-300">Next Step</p>
+                        <h2 class="mt-4 text-3xl font-extrabold tracking-tight md:text-4xl">
+                            Share your room list
+                        </h2>
+                        <p class="mt-4 text-slate-300">
+                            Tell us your room types, user profile, and scope. We'll recommend a practical rollout path for business or education environments.
+                        </p>
+                        <div class="mt-8 flex flex-wrap gap-4">
+                            <a href="contact.html" class="rounded-full bg-cyan-500 px-8 py-4 text-sm font-bold text-slate-950 transition hover:bg-cyan-400">
+                                Request Consultation
+                            </a>
+                            <a href="business-solutions.html" class="rounded-full border border-cyan-300/35 bg-white/10 px-8 py-4 text-sm font-bold text-white transition hover:bg-white/15">
+                                View Enterprise
+                            </a>
+                        </div>
+                    </div>
+                    <div class="relative min-h-[300px]">
+                        <img src="assets/images/hero/hero-boardroom-executive.jpg" 
+                             alt="Executive space" 
+                             class="absolute inset-0 h-full w-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-r from-slate-950/60 via-blue-950/30 to-transparent lg:bg-gradient-to-l"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="px-4 pb-10 pt-16 sm:px-6 lg:px-8">
-        <div class="mx-auto max-w-7xl rounded-[2.5rem] bg-slate-950 px-10 py-14 text-white halo-shadow md:px-14">
-            <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 bg-white px-6 py-12 lg:px-8">
+        <div class="mx-auto max-w-7xl">
+            <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
                 <div class="lg:col-span-2">
-                    <a href="index.html" class="text-3xl font-extrabold tracking-tight">
-                        POSTO<span class="text-blue-400">Tech</span>
+                    <a href="index.html" class="flex items-center gap-3">
+                        <svg class="h-10 w-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="4" width="14" height="14" rx="3" fill="#0f172a"/>
+                            <rect x="22" y="4" width="14" height="14" rx="3" fill="#3b82f6"/>
+                            <rect x="4" y="22" width="14" height="14" rx="3" fill="#3b82f6"/>
+                            <rect x="22" y="22" width="14" height="14" rx="3" fill="#0f172a"/>
+                        </svg>
+                        <span class="text-2xl font-extrabold tracking-tight">
+                            <span class="text-slate-950">POSTO</span><span class="text-blue-600">Tech</span>
+                        </span>
                     </a>
-                    <p class="mt-5 max-w-md leading-relaxed text-slate-400">
-                        POSTO Tech designs and supports practical AV environments for meetings, classrooms, and training spaces across Pakistan.
+                    <p class="mt-4 max-w-sm text-slate-600">
+                        Premium AV solutions for enterprise and education across Pakistan.
                     </p>
                 </div>
                 <div>
-                    <p class="text-xs font-bold uppercase tracking-widest text-blue-300">Navigation</p>
-                    <nav class="mt-5 space-y-3">
-                        <a href="products.html" class="block text-slate-400 transition hover:text-white">Products</a>
-                        <a href="solutions.html" class="block text-slate-400 transition hover:text-white">Solutions</a>
-                        <a href="business-solutions.html" class="block text-slate-400 transition hover:text-white">Enterprise</a>
-                        <a href="about.html" class="block text-slate-400 transition hover:text-white">About Us</a>
-                        <a href="contact.html" class="block text-slate-400 transition hover:text-white">Contact</a>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Navigation</p>
+                    <nav class="mt-4 space-y-2">
+                        <a href="products.html" class="block text-slate-600 transition hover:text-blue-600">Products</a>
+                        <a href="solutions.html" class="block text-slate-600 transition hover:text-blue-600">Solutions</a>
+                        <a href="business-solutions.html" class="block text-slate-600 transition hover:text-blue-600">Enterprise</a>
+                        <a href="about.html" class="block text-slate-600 transition hover:text-blue-600">About</a>
+                        <a href="contact.html" class="block text-slate-600 transition hover:text-blue-600">Contact</a>
                     </nav>
                 </div>
                 <div>
-                    <p class="text-xs font-bold uppercase tracking-widest text-blue-300">Contact</p>
-                    <div class="mt-5 space-y-3 text-slate-400">
-                        <p>Jalil Raza</p>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Contact</p>
+                    <div class="mt-4 space-y-2 text-slate-600">
                         <p>+92-33 99887766</p>
                         <p>contact@postolabs.com</p>
-                        <a href="https://www.postolabs.com" target="_blank" class="text-blue-400 transition hover:text-blue-300">www.postolabs.com</a>
+                    </div>
+                    <div class="mt-6 flex items-center gap-3">
+                        <a href="https://instagram.com/postotech" target="_blank" class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-slate-600 transition hover:bg-blue-600 hover:text-white">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://linkedin.com/company/postotech" target="_blank" class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-slate-600 transition hover:bg-blue-600 hover:text-white">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="https://facebook.com/postotech" target="_blank" class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-slate-600 transition hover:bg-blue-600 hover:text-white">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://x.com/postotech" target="_blank" class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-slate-600 transition hover:bg-blue-600 hover:text-white">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 md:flex-row">
+            <div class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-slate-200 pt-8 md:flex-row">
                 <p class="text-sm text-slate-500">&copy; 2024 POSTO Tech. All rights reserved.</p>
-                <p class="text-sm text-slate-500">Crafted with precision in Pakistan</p>
+                <p class="text-sm text-slate-500">Karachi · Lahore · Islamabad</p>
             </div>
         </div>
     </footer>
 
     <script>
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('reveal-in');
-                    observer.unobserve(entry.target);
-                }
+        // Smooth scroll offset for fixed header
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var targetId = this.getAttribute('href');
+                    var target = document.querySelector(targetId);
+                    if (target) {
+                        var headerOffset = 100;
+                        var elementPosition = target.getBoundingClientRect().top;
+                        var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                    }
+                });
             });
-        }, { threshold: 0.12 });
-
-        document.querySelectorAll('[data-reveal]').forEach((element) => {
-            element.classList.add('reveal-ready');
-            observer.observe(element);
         });
     </script>
 </body>
