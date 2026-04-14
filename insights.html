@@ -31,11 +31,7 @@
         
         /* Insights specific styles */
         .insights-hero-bg {
-            background: 
-                radial-gradient(ellipse at 0% 0%, rgba(59, 130, 246, 0.12) 0%, transparent 40%),
-                radial-gradient(ellipse at 100% 100%, rgba(30, 64, 175, 0.15) 0%, transparent 50%),
-                radial-gradient(ellipse at 50% 50%, rgba(6, 182, 212, 0.04) 0%, transparent 60%),
-                linear-gradient(165deg, #0a0f1c 0%, #0f172a 40%, #1e293b 100%);
+            background-color: #0a0f1c;
         }
         
         .article-card {
@@ -154,6 +150,11 @@
         
         <!-- Hero Section -->
         <section class="relative min-h-[600px] overflow-hidden insights-hero-bg">
+            <div class="absolute inset-0">
+                <img src="assets/images/hero/hero-classroom-smart.jpg" alt="" class="h-full w-full object-cover object-center">
+            </div>
+            <div class="absolute inset-0" style="background: linear-gradient(165deg, rgba(10,15,28,0.90) 0%, rgba(15,23,42,0.82) 40%, rgba(30,41,59,0.84) 100%);"></div>
+            <div class="absolute inset-0" style="background: radial-gradient(ellipse at 0% 0%, rgba(59, 130, 246, 0.14) 0%, transparent 42%), radial-gradient(ellipse at 100% 100%, rgba(30, 64, 175, 0.18) 0%, transparent 55%), radial-gradient(ellipse at 50% 50%, rgba(6, 182, 212, 0.06) 0%, transparent 62%);"></div>
             <div class="absolute inset-0 opacity-30">
                 <div class="absolute inset-0" style="background-image: linear-gradient(rgba(59,130,246,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.03) 1px, transparent 1px); background-size: 60px 60px;"></div>
             </div>
