@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSTO Insights | Digital Transformation, Smart Classrooms & AV Solutions in Pakistan</title>
+    <meta name="description" content="Explore expert insights on digital transformation, smart classroom solutions, interactive flat panels, AV systems, and enterprise collaboration technology in Pakistan.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://www.postolabs.com/insights.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="POSTO Tech">
+    <meta property="og:title" content="POSTO Insights | Digital Transformation & Smart Classroom Solutions Pakistan">
+    <meta property="og:description" content="Expert guidance on smart classrooms, AV solutions, and digital transformation for education, government, and enterprise in Pakistan.">
+    <meta property="og:url" content="https://www.postolabs.com/insights.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/site.css">
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-200 selection:text-blue-900">
+    <style>
+        .logo-mark { transition: transform 0.3s ease; }
+        .logo-mark rect { transition: all 0.3s ease; }
+        a:hover .logo-mark { transform: scale(1.05); }
+        a:hover .logo-mark rect:nth-child(1) { fill: #3b82f6; }
+        a:hover .logo-mark rect:nth-child(2) { fill: #0f172a; }
+        a:hover .logo-mark rect:nth-child(3) { fill: #0f172a; }
+        a:hover .logo-mark rect:nth-child(4) { fill: #3b82f6; }
+        
+        /* Insights specific styles */
+        .insights-hero-bg {
+            background: 
+                radial-gradient(ellipse at 0% 0%, rgba(59, 130, 246, 0.12) 0%, transparent 40%),
+                radial-gradient(ellipse at 100% 100%, rgba(30, 64, 175, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 50%, rgba(6, 182, 212, 0.04) 0%, transparent 60%),
+                linear-gradient(165deg, #0a0f1c 0%, #0f172a 40%, #1e293b 100%);
+        }
+        
+        .article-card {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .article-card:hover {
+            transform: translateY(-6px);
+        }
+        .article-card:hover .article-image {
+            transform: scale(1.05);
+        }
+        .article-card:hover .article-title {
+            color: #2563eb;
+        }
+        .article-image {
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .article-title {
+            transition: color 0.3s ease;
+        }
+        
+        .category-pill {
+            transition: all 0.25s ease;
+        }
+        .category-pill:hover {
+            transform: translateY(-2px);
+        }
+        .category-pill.active {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            color: white;
+            border-color: transparent;
+        }
+        
+        .search-input:focus {
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15), 0 4px 24px rgba(10, 15, 28, 0.08);
+        }
+        
+        .featured-article:hover .featured-image {
+            transform: scale(1.03);
+        }
+        .featured-image {
+            transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .reveal-ready {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 800ms cubic-bezier(0.16, 1, 0.3, 1),
+                        transform 800ms cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-ready.reveal-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .tag-filter {
+            transition: all 0.2s ease;
+        }
+        .tag-filter:hover, .tag-filter.active {
+            background: rgba(59, 130, 246, 0.1);
+            border-color: rgba(59, 130, 246, 0.3);
+            color: #2563eb;
+        }
+    </style>
+
+    <!-- Navigation -->
+    <nav class="fixed inset-x-0 top-0 z-50 border-b border-white/20 bg-white/70 backdrop-blur-xl">
+        <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
+            <a href="index.html" class="group flex items-center gap-3">
+                <svg class="logo-mark h-10 w-10 drop-shadow-lg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoDark" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+                        </linearGradient>
+                        <linearGradient id="logoBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect x="4" y="4" width="14" height="14" rx="3" fill="url(#logoDark)"/>
+                    <rect x="22" y="4" width="14" height="14" rx="3" fill="url(#logoBlue)"/>
+                    <rect x="4" y="22" width="14" height="14" rx="3" fill="url(#logoBlue)"/>
+                    <rect x="22" y="22" width="14" height="14" rx="3" fill="url(#logoDark)"/>
+                </svg>
+                <span class="text-2xl font-extrabold tracking-tight">
+                    <span class="bg-gradient-to-r from-slate-950 to-slate-700 bg-clip-text text-transparent">POSTO</span><span class="text-blue-600">Tech</span>
+                </span>
+            </a>
+            <div class="hidden items-center gap-8 md:flex">
+                <a href="products.html" class="text-sm font-medium text-slate-600 transition hover:text-blue-600">Products</a>
+                <a href="solutions.html" class="text-sm font-medium text-slate-600 transition hover:text-blue-600">Solutions</a>
+                <a href="business-solutions.html" class="text-sm font-medium text-slate-600 transition hover:text-blue-600">Enterprise</a>
+                <a href="insights.html" class="text-sm font-bold text-blue-600">Insights</a>
+                <a href="about.html" class="text-sm font-medium text-slate-600 transition hover:text-blue-600">About</a>
+                <a href="contact.html" class="text-sm font-medium text-slate-600 transition hover:text-blue-600">Contact</a>
+            </div>
+            <a href="contact.html" class="hidden rounded-full bg-slate-950 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-600 md:block">
+                Get in Touch
+            </a>
+        </div>
+        <div class="border-t border-slate-200/70 bg-white/90 md:hidden">
+            <div class="mx-auto flex max-w-7xl items-center justify-between gap-2 overflow-x-auto pl-3 pr-8 py-3 text-[11px] font-semibold text-slate-600">
+                <a href="index.html" class="whitespace-nowrap">Home</a>
+                <a href="business-solutions.html" class="whitespace-nowrap">Enterprise</a>
+                <a href="solutions.html" class="whitespace-nowrap">Solutions</a>
+                <a href="products.html" class="whitespace-nowrap">Products</a>
+                <a href="insights.html" class="whitespace-nowrap text-blue-600">Insights</a>
+                <a href="about.html" class="whitespace-nowrap">About</a>
+                <a href="contact.html" class="whitespace-nowrap">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32 md:pt-20">
+        
+        <!-- Hero Section -->
+        <section class="relative min-h-[600px] overflow-hidden insights-hero-bg">
+            <div class="absolute inset-0 opacity-30">
+                <div class="absolute inset-0" style="background-image: linear-gradient(rgba(59,130,246,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.03) 1px, transparent 1px); background-size: 60px 60px;"></div>
+            </div>
+            <div class="relative mx-auto flex min-h-[600px] max-w-7xl flex-col justify-center px-6 py-24 lg:px-8">
+                <div class="max-w-3xl">
+                    <p class="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-400/30 bg-blue-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.25em] text-blue-300">
+                        <span class="h-1.5 w-1.5 rounded-full bg-blue-400"></span>
+                        POSTO Insights
+                    </p>
+                    <h1 class="text-4xl font-extrabold leading-[1.1] tracking-tight text-white md:text-5xl lg:text-6xl">
+                        Make better technology decisions
+                    </h1>
+                    <p class="mt-6 max-w-2xl text-lg leading-relaxed text-slate-300">
+                        Expert guidance on digital transformation, smart classrooms, collaboration technology, and AV solutions for education, government, and enterprise across Pakistan.
+                    </p>
+                    <div class="mt-10 flex flex-wrap gap-4">
+                        <a href="#articles" class="rounded-full bg-white px-8 py-4 text-sm font-bold text-slate-950 transition hover:bg-blue-50">
+                            Explore Insights
+                        </a>
+                        <a href="contact.html" class="rounded-full border border-white/30 bg-white/10 px-8 py-4 text-sm font-bold text-white backdrop-blur-sm transition hover:bg-white/20">
+                            Talk to POSTO Tech
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Floating stat cards -->
+                <div class="mt-16 grid gap-4 sm:grid-cols-3 lg:absolute lg:right-8 lg:top-1/2 lg:mt-0 lg:-translate-y-1/2 lg:grid-cols-1">
+                    <div class="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm">
+                        <p class="text-2xl font-extrabold text-white">Education</p>
+                        <p class="mt-1 text-sm text-slate-400">Smart classrooms & learning technology</p>
+                    </div>
+                    <div class="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm">
+                        <p class="text-2xl font-extrabold text-white">Government</p>
+                        <p class="mt-1 text-sm text-slate-400">Digital transformation for public sector</p>
+                    </div>
+                    <div class="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm">
+                        <p class="text-2xl font-extrabold text-white">Enterprise</p>
+                        <p class="mt-1 text-sm text-slate-400">AV & collaboration solutions</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Intro / Positioning Section -->
+        <section class="px-6 py-20 lg:px-8">
+            <div class="mx-auto max-w-7xl">
+                <div class="mx-auto max-w-3xl text-center reveal-ready">
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-blue-600">Knowledge Hub</p>
+                    <h2 class="mt-4 text-3xl font-extrabold tracking-tight text-slate-950 md:text-4xl">
+                        Trusted guidance for technology buyers
+                    </h2>
+                    <p class="mt-6 text-lg leading-relaxed text-slate-600">
+                        POSTO Insights is where school leaders, government institutions, enterprises, and procurement teams learn about the real value of smart learning environments, meeting room modernization, AV solutions, and digital collaboration. We help decision-makers evaluate, plan, and invest in technology with confidence.
+                    </p>
+                </div>
+                
+                <div class="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                    <div class="rounded-2xl border border-slate-200 bg-white p-6 text-center soft-shadow reveal-ready stagger-1">
+                        <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                        </div>
+                        <h3 class="mt-4 font-bold text-slate-950">Learn</h3>
+                        <p class="mt-1 text-sm text-slate-600">Understand modern classroom and workplace technology</p>
+                    </div>
+                    <div class="rounded-2xl border border-slate-200 bg-white p-6 text-center soft-shadow reveal-ready stagger-2">
+                        <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <h3 class="mt-4 font-bold text-slate-950">Evaluate</h3>
+                        <p class="mt-1 text-sm text-slate-600">Compare solutions and make informed investment choices</p>
+                    </div>
+                    <div class="rounded-2xl border border-slate-200 bg-white p-6 text-center soft-shadow reveal-ready stagger-3">
+                        <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                        </div>
+                        <h3 class="mt-4 font-bold text-slate-950">Plan</h3>
+                        <p class="mt-1 text-sm text-slate-600">Build a practical roadmap for digital transformation</p>
+                    </div>
+                    <div class="rounded-2xl border border-slate-200 bg-white p-6 text-center soft-shadow reveal-ready stagger-4">
+                        <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                        </div>
+                        <h3 class="mt-4 font-bold text-slate-950">Connect</h3>
+                        <p class="mt-1 text-sm text-slate-600">Reach our team for tailored recommendations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category Navigation Section -->
+        <section class="border-y border-slate-200 bg-white px-6 py-12 lg:px-8">
+            <div class="mx-auto max-w-7xl">
+                <p class="text-center text-xs font-semibold uppercase tracking-[0.3em] text-slate-500 reveal-ready">Browse by Category</p>
+                <div class="mt-8 flex flex-wrap justify-center gap-3 reveal-ready">
+                    <button class="category-pill active inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-5 py-2.5 text-sm font-semibold text-slate-700" data-category="all">
+                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
+                        All Insights
+                    </button>
+                    <button class="category-pill inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-600" data-category="education">
+                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422A12.083 12.083 0 0112 21.5a12.083 12.083 0 01-6.16-10.922L12 14z"/></svg>
+                        Smart Education
+                    </button>
+                    <button class="category-pill inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-600" data-category="government">
+                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                        Government Transformation
+                    </button>
+                    <button class="category-pill inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-600" data-category="enterprise">
+                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        Enterprise Collaboration
+                    </button>
+                    <button class="category-pill inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-600" data-category="buying-guide">
+                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
+                        Buying Guides
+                    </button>
+                    <button class="category-pill inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-600" data-category="productivity">
+                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                        Productivity &amp; ROI
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search & Filter UI -->
+        <section id="articles" class="px-6 pt-16 lg:px-8">
+            <div class="mx-auto max-w-7xl">
+                <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between reveal-ready">
+                    <div>
+                        <h2 class="text-2xl font-extrabold tracking-tight text-slate-950 md:text-3xl">Latest Articles</h2>
+                        <p class="mt-1 text-slate-600">Practical insights for technology decision-makers</p>
+                    </div>
+                    <div class="relative w-full md:max-w-md">
+                        <svg class="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                        <input type="text" id="searchInput" placeholder="Search articles, topics, or keywords..." class="search-input w-full rounded-full border border-slate-200 bg-white py-3 pl-12 pr-5 text-sm text-slate-700 outline-none transition placeholder:text-slate-400">
+                    </div>
+                </div>
+                
+                <div class="mt-6 flex flex-wrap gap-2 reveal-ready">
+                    <span class="text-sm font-medium text-slate-500">Popular tags:</span>
+                    <button class="tag-filter rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-600">smart classroom</button>
+                    <button class="tag-filter rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-600">interactive flat panel</button>
+                    <button class="tag-filter rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-600">video conferencing</button>
+                    <button class="tag-filter rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-600">digital transformation</button>
+                    <button class="tag-filter rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-600">AV solutions</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Article Section -->
+        <section class="px-6 py-12 lg:px-8">
+            <div class="mx-auto max-w-7xl">
+                <a href="article-smart-classrooms-pakistan.html" class="featured-article group block overflow-hidden rounded-[2rem] border border-slate-200 bg-white soft-shadow reveal-ready" data-category="education">
+                    <div class="grid lg:grid-cols-2">
+                        <div class="relative aspect-[16/10] overflow-hidden lg:aspect-auto">
+                            <img src="assets/images/articles/insights-smart-classroom-solar-system.png" alt="Smart classroom in Pakistan with solar system lesson on an interactive display" class="featured-image absolute inset-0 h-full w-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-r from-transparent to-slate-900/5 lg:bg-gradient-to-l"></div>
+                        </div>
+                        <div class="flex flex-col justify-center p-8 lg:p-12">
+                            <div class="flex flex-wrap items-center gap-3">
+                                <span class="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-xs font-bold text-blue-700">Smart Education</span>
+                                <span class="text-xs text-slate-500">8 min read</span>
+                            </div>
+                            <h3 class="article-title mt-4 text-2xl font-extrabold leading-tight text-slate-950 md:text-3xl lg:text-4xl">
+                                Why Smart Classrooms Matter for Modern Education in Pakistan
+                            </h3>
+                            <p class="mt-4 text-base leading-relaxed text-slate-600">
+                                Pakistan's education sector is at a turning point. As institutions seek better engagement, improved learning outcomes, and future-ready infrastructure, smart classrooms offer a practical path forward. This article explores what smart classrooms mean for Pakistani schools, colleges, and universities, and why the investment pays off for students, teachers, and administrators alike.
+                            </p>
+                            <div class="mt-6 flex items-center gap-3">
+                                <div class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-xs font-bold text-slate-600">PT</div>
+                                <div>
+                                    <p class="text-sm font-semibold text-slate-900">POSTO Tech</p>
+                                    <p class="text-xs text-slate-500">Advisory Team &middot; April 2026</p>
+                                </div>
+                            </div>
+                            <div class="mt-8">
+                                <span class="inline-flex items-center gap-2 text-sm font-bold text-blue-600 transition group-hover:gap-3">
+                                    Read Article
+                                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Article Grid Section -->
+        <section class="px-6 pb-20 lg:px-8">
+            <div class="mx-auto max-w-7xl">
+                <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3" id="articleGrid">
+                    
+                    <!-- Article 1 -->
+                    <article class="article-card group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white" data-category="education">
+                        <div class="aspect-[16/10] overflow-hidden bg-slate-100">
+                            <img src="assets/images/articles/insights-smart-classroom-solar-system.png" alt="Smart classroom with solar system lesson display" class="article-image h-full w-full object-cover">
+                        </div>
+                        <div class="flex flex-1 flex-col p-6">
+                            <div class="flex items-center gap-2">
+                                <span class="rounded-full bg-blue-50 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-blue-700">Smart Education</span>
+                                <span class="text-xs text-slate-400">6 min</span>
+                            </div>
+                            <h3 class="article-title mt-3 text-lg font-bold leading-snug text-slate-950">
+                                <a href="article-smart-classrooms-pakistan.html">Why Smart Classrooms Matter for Modern Education in Pakistan</a>
+                            </h3>
+                            <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                                How interactive technology is reshaping teaching and learning outcomes across Pakistani institutions.
+                            </p>
+                            <a href="article-smart-classrooms-pakistan.html" class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue-600 hover:gap-2 transition-all">
+                                Read more <span>→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="article-card group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white" data-category="education">
+                        <div class="aspect-[16/10] overflow-hidden bg-slate-100">
+                            <img src="assets/images/products/product-display-interactive.jpg" alt="Interactive flat panel" class="article-image h-full w-full object-cover">
+                        </div>
+                        <div class="flex flex-1 flex-col p-6">
+                            <div class="flex items-center gap-2">
+                                <span class="rounded-full bg-blue-50 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-blue-700">Smart Education</span>
+                                <span class="text-xs text-slate-400">5 min</span>
+                            </div>
+                            <h3 class="article-title mt-3 text-lg font-bold leading-snug text-slate-950">
+                                How Interactive Flat Panels Improve Learning Outcomes
+                            </h3>
+                            <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                                Research-backed insights on how interactive displays boost student engagement and comprehension.
+                            </p>
+                            <a href="#" class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue-600 hover:gap-2 transition-all">
+                                Read more <span>→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="article-card group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white" data-category="education">
+                        <div class="aspect-[16/10] overflow-hidden bg-slate-100">
+                            <img src="assets/images/products/product-smart-board.jpg" alt="Smart board comparison" class="article-image h-full w-full object-cover">
+                        </div>
+                        <div class="flex flex-1 flex-col p-6">
+                            <div class="flex items-center gap-2">
+                                <span class="rounded-full bg-blue-50 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-blue-700">Smart Education</span>
+                                <span class="text-xs text-slate-400">7 min</span>
+                            </div>
+                            <h3 class="article-title mt-3 text-lg font-bold leading-snug text-slate-950">
+                                Smart Classroom vs Traditional Classroom: What School Leaders Need to Know
+                            </h3>
+                            <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                                A practical comparison for principals and administrators evaluating classroom upgrades.
+                            </p>
+                            <a href="#" class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue-600 hover:gap-2 transition-all">
+                                Read more <span>→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 4 -->
+                    <article class="article-card group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white" data-category="government">
+                        <div class="aspect-[16/10] overflow-hidden bg-slate-100">
+                            <img src="assets/images/rooms/room-conference-medium.jpg" alt="Government office" class="article-image h-full w-full object-cover">
+                        </div>
+                        <div class="flex flex-1 flex-col p-6">
+                            <div class="flex items-center gap-2">
+                                <span class="rounded-full bg-amber-50 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-amber-700">Government</span>
+                                <span class="text-xs text-slate-400">6 min</span>
+                            </div>
+                            <h3 class="article-title mt-3 text-lg font-bold leading-snug text-slate-950">
+                                How Digital Transformation Can Improve Productivity in Government Offices
+                            </h3>
+                            <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                                Modern collaboration tools and AV systems that help public sector teams work smarter.
+                            </p>
+                            <a href="#" class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue-600 hover:gap-2 transition-all">
+                                Read more <span>→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 5 -->
+                    <article class="article-card group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white" data-category="government">
+                        <div class="aspect-[16/10] overflow-hidden bg-slate-100">
+                            <img src="assets/images/rooms/room-training-flexible.jpg" alt="Government training room" class="article-image h-full w-full object-cover">
+                        </div>
+                        <div class="flex flex-1 flex-col p-6">
+                            <div class="flex items-center gap-2">
+                                <span class="rounded-full bg-amber-50 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-amber-700">Government</span>
+                                <span class="text-xs text-slate-400">5 min</span>
+                            </div>
+                            <h3 class="article-title mt-3 text-lg font-bold leading-snug text-slate-950">
+                                Why Government Training Rooms Need Interactive Display and AV Solutions
+                            </h3>
+                            <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                                Creating effective learning environments for civil service and public sector training programs.
+                            </p>
+                            <a href="#" class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue-600 hover:gap-2 transition-all">
+                                Read more <span>→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 6 -->
+                    <article class="article-card group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white" data-category="enterprise">
+                        <div class="aspect-[16/10] overflow-hidden bg-slate-100">
+                            <img src="assets/images/rooms/room-boardroom-executive.jpg" alt="Enterprise meeting room" class="article-image h-full w-full object-cover">
+                        </div>
+                        <div class="flex flex-1 flex-col p-6">
+                            <div class="flex items-center gap-2">
+                                <span class="rounded-full bg-cyan-50 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-cyan-700">Enterprise</span>
+                                <span class="text-xs text-slate-400">6 min</span>
+                            </div>
+                            <h3 class="article-title mt-3 text-lg font-bold leading-snug text-slate-950">
+                                How Modern Meeting Room Technology Improves Enterprise Productivity
+                            </h3>
+                            <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                                The business case for upgrading conference rooms with video conferencing and wireless sharing.
+                            </p>
+                            <a href="#" class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue-600 hover:gap-2 transition-all">
+                                Read more <span>→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 7 -->
+                    <article class="article-card group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white" data-category="enterprise">
+                        <div class="aspect-[16/10] overflow-hidden bg-slate-100">
+                            <img src="assets/images/products/product-camera-ptz.jpg" alt="Video conferencing setup" class="article-image h-full w-full object-cover">
+                        </div>
+                        <div class="flex flex-1 flex-col p-6">
+                            <div class="flex items-center gap-2">
+                                <span class="rounded-full bg-cyan-50 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-cyan-700">Enterprise</span>
+                                <span class="text-xs text-slate-400">7 min</span>
+                            </div>
+                            <h3 class="article-title mt-3 text-lg font-bold leading-snug text-slate-950">
+                                Video Conferencing and Interactive Displays for Hybrid Work in Pakistan
+                            </h3>
+                            <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                                Building inclusive meeting experiences for distributed teams and remote stakeholders.
+                            </p>
+                            <a href="#" class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue-600 hover:gap-2 transition-all">
+                                Read more <span>→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 8 -->
+                    <article class="article-card group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white" data-category="buying-guide">
+                        <div class="aspect-[16/10] overflow-hidden bg-slate-100">
+                            <img src="assets/images/products/product-display-interactive.jpg" alt="Interactive flat panel vs projector" class="article-image h-full w-full object-cover">
+                        </div>
+                        <div class="flex flex-1 flex-col p-6">
+                            <div class="flex items-center gap-2">
+                                <span class="rounded-full bg-purple-50 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-purple-700">Buying Guide</span>
+                                <span class="text-xs text-slate-400">8 min</span>
+                            </div>
+                            <h3 class="article-title mt-3 text-lg font-bold leading-snug text-slate-950">
+                                Interactive Flat Panel vs Projector: Which Is Better for Schools and Offices?
+                            </h3>
+                            <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                                A side-by-side comparison of total cost, image quality, maintenance, and long-term value.
+                            </p>
+                            <a href="#" class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue-600 hover:gap-2 transition-all">
+                                Read more <span>→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 9 -->
+                    <article class="article-card group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white" data-category="buying-guide">
+                        <div class="aspect-[16/10] overflow-hidden bg-slate-100">
+                            <img src="assets/images/products/product-smart-board.jpg" alt="Choosing a smart board" class="article-image h-full w-full object-cover">
+                        </div>
+                        <div class="flex flex-1 flex-col p-6">
+                            <div class="flex items-center gap-2">
+                                <span class="rounded-full bg-purple-50 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-purple-700">Buying Guide</span>
+                                <span class="text-xs text-slate-400">7 min</span>
+                            </div>
+                            <h3 class="article-title mt-3 text-lg font-bold leading-snug text-slate-950">
+                                How to Choose the Right Smart Board for Your School, College, or Office
+                            </h3>
+                            <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                                Size, features, software, and installation considerations for first-time buyers in Pakistan.
+                            </p>
+                            <a href="#" class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue-600 hover:gap-2 transition-all">
+                                Read more <span>→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 10 -->
+                    <article class="article-card group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white sm:col-span-2 lg:col-span-1" data-category="productivity">
+                        <div class="aspect-[16/10] overflow-hidden bg-slate-100">
+                            <img src="assets/images/rooms/room-meeting-small.jpg" alt="Digital transformation ROI" class="article-image h-full w-full object-cover">
+                        </div>
+                        <div class="flex flex-1 flex-col p-6">
+                            <div class="flex items-center gap-2">
+                                <span class="rounded-full bg-emerald-50 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-emerald-700">Productivity &amp; ROI</span>
+                                <span class="text-xs text-slate-400">6 min</span>
+                            </div>
+                            <h3 class="article-title mt-3 text-lg font-bold leading-snug text-slate-950">
+                                The ROI of Digital Transformation for Education, Government, and Enterprise
+                            </h3>
+                            <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                                Measurable returns from smart technology investments across classrooms, offices, and training centers.
+                            </p>
+                            <a href="#" class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue-600 hover:gap-2 transition-all">
+                                Read more <span>→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="px-6 py-12 lg:px-8">
+            <div class="mx-auto max-w-7xl">
+                <div class="overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-slate-950 via-blue-950 to-cyan-950 halo-shadow reveal-ready">
+                    <div class="grid lg:grid-cols-2">
+                        <div class="p-10 text-white lg:p-16">
+                            <p class="text-xs font-semibold uppercase tracking-[0.3em] text-blue-300">Start the Conversation</p>
+                            <h2 class="mt-4 text-3xl font-extrabold tracking-tight md:text-4xl">
+                                Talk to POSTO Tech about your digital transformation requirements
+                            </h2>
+                            <p class="mt-4 max-w-lg text-slate-300">
+                                Whether you are planning a smart classroom rollout, upgrading meeting rooms, or evaluating AV solutions for your organization, our team can help you build a practical, budget-aware plan.
+                            </p>
+                            <div class="mt-8 flex flex-wrap gap-4">
+                                <a href="contact.html" class="rounded-full bg-white px-8 py-4 text-sm font-bold text-slate-950 transition hover:bg-blue-50">
+                                    Request a Consultation
+                                </a>
+                                <a href="solutions.html" class="rounded-full border border-blue-300/35 bg-white/10 px-8 py-4 text-sm font-bold text-white transition hover:bg-white/15">
+                                    Explore Our Solutions
+                                </a>
+                            </div>
+                        </div>
+                        <div class="relative min-h-[280px] lg:min-h-full">
+                            <img src="assets/images/hero/hero-boardroom-executive.jpg" alt="Modern collaboration space" class="absolute inset-0 h-full w-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-r from-slate-950/70 via-blue-950/40 to-transparent lg:bg-gradient-to-l"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter / Resource Hook -->
+        <section class="px-6 py-16 lg:px-8">
+            <div class="mx-auto max-w-7xl">
+                <div class="rounded-[2rem] border border-blue-100 bg-gradient-to-br from-white via-blue-50/50 to-white p-10 md:p-16 reveal-ready">
+                    <div class="mx-auto max-w-2xl text-center">
+                        <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-600 text-white">
+                            <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        </div>
+                        <h2 class="mt-6 text-2xl font-extrabold tracking-tight text-slate-950 md:text-3xl">
+                            Stay informed on technology trends
+                        </h2>
+                        <p class="mt-3 text-slate-600">
+                            Get practical insights on smart classrooms, AV solutions, and digital transformation delivered to your inbox.
+                        </p>
+                        <form class="mt-8 flex flex-col gap-3 sm:flex-row" onsubmit="event.preventDefault(); alert('Thank you for your interest. Our newsletter will be launching soon.');">
+                            <input type="email" required placeholder="Enter your email address" class="flex-1 rounded-full border border-slate-200 bg-white px-5 py-3 text-sm text-slate-700 outline-none transition focus:border-blue-300 focus:ring-2 focus:ring-blue-100">
+                            <button type="submit" class="rounded-full bg-slate-950 px-8 py-3 text-sm font-bold text-white transition hover:bg-blue-600">
+                                Subscribe
+                            </button>
+                        </form>
+                        <p class="mt-3 text-xs text-slate-400">No spam. Unsubscribe anytime. Launching soon.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 bg-white px-6 py-12 lg:px-8">
+        <div class="mx-auto max-w-7xl">
+            <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
+                
+                <!-- Brand -->
+                <div class="lg:col-span-2">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <svg class="h-10 w-10 drop-shadow-lg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="logoDarkF" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+                                </linearGradient>
+                                <linearGradient id="logoBlueF" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect x="4" y="4" width="14" height="14" rx="3" fill="url(#logoDarkF)"/>
+                            <rect x="22" y="4" width="14" height="14" rx="3" fill="url(#logoBlueF)"/>
+                            <rect x="4" y="22" width="14" height="14" rx="3" fill="url(#logoBlueF)"/>
+                            <rect x="22" y="22" width="14" height="14" rx="3" fill="url(#logoDarkF)"/>
+                        </svg>
+                        <span class="text-2xl font-extrabold tracking-tight">
+                            <span class="text-slate-950">POSTO</span><span class="text-blue-600">Tech</span>
+                        </span>
+                    </a>
+                    <p class="mt-4 max-w-sm text-slate-600">
+                        Premium AV solutions for enterprise and education across Pakistan.
+                    </p>
+                </div>
+
+                <!-- Navigation -->
+                <div>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Navigation</p>
+                    <nav class="mt-4 space-y-2">
+                        <a href="products.html" class="block text-slate-600 transition hover:text-blue-600">Products</a>
+                        <a href="solutions.html" class="block text-slate-600 transition hover:text-blue-600">Solutions</a>
+                        <a href="business-solutions.html" class="block text-slate-600 transition hover:text-blue-600">Enterprise</a>
+                        <a href="insights.html" class="block text-slate-600 transition hover:text-blue-600">Insights</a>
+                        <a href="about.html" class="block text-slate-600 transition hover:text-blue-600">About</a>
+                        <a href="contact.html" class="block text-slate-600 transition hover:text-blue-600">Contact</a>
+                    </nav>
+                </div>
+
+                <!-- Insights -->
+                <div>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Popular Insights</p>
+                    <nav class="mt-4 space-y-2">
+                        <a href="article-smart-classrooms-pakistan.html" class="block text-slate-600 transition hover:text-blue-600">Smart Classrooms</a>
+                        <a href="#" class="block text-slate-600 transition hover:text-blue-600">Interactive Panels</a>
+                        <a href="#" class="block text-slate-600 transition hover:text-blue-600">Video Conferencing</a>
+                        <a href="#" class="block text-slate-600 transition hover:text-blue-600">Buying Guides</a>
+                    </nav>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Contact</p>
+                    <div class="mt-4 space-y-2 text-slate-600">
+                        <p>+92-33 99887766</p>
+                        <p>contact@postolabs.com</p>
+                    </div>
+                    <div class="mt-6 flex items-center gap-3">
+                        <a href="https://instagram.com/postotech" target="_blank" class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-slate-600 transition hover:bg-blue-600 hover:text-white">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://linkedin.com/company/postotech" target="_blank" class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-slate-600 transition hover:bg-blue-600 hover:text-white">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="https://facebook.com/postotech" target="_blank" class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-slate-600 transition hover:bg-blue-600 hover:text-white">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://x.com/postotech" target="_blank" class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-slate-600 transition hover:bg-blue-600 hover:text-white">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-slate-200 pt-8 md:flex-row">
+                <p class="text-sm text-slate-500">&copy; 2024 POSTO Tech. All rights reserved.</p>
+                <p class="text-sm text-slate-500">Karachi &middot; Lahore &middot; Islamabad</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll Reveal Animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('reveal-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+
+        document.querySelectorAll('.reveal-ready').forEach((el) => observer.observe(el));
+
+        // Category Filter
+        const categoryPills = document.querySelectorAll('.category-pill');
+        const articles = document.querySelectorAll('#articleGrid > article, #articleGrid ~ section .featured-article');
+        const featuredArticle = document.querySelector('.featured-article');
+        const gridArticles = document.querySelectorAll('#articleGrid > article');
+
+        categoryPills.forEach(pill => {
+            pill.addEventListener('click', () => {
+                const category = pill.dataset.category;
+                
+                categoryPills.forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+                
+                // Filter featured article
+                if (featuredArticle) {
+                    if (category === 'all' || featuredArticle.dataset.category === category) {
+                        featuredArticle.style.display = 'block';
+                    } else {
+                        featuredArticle.style.display = 'none';
+                    }
+                }
+                
+                // Filter grid articles
+                gridArticles.forEach(article => {
+                    if (category === 'all' || article.dataset.category === category) {
+                        article.style.display = 'flex';
+                    } else {
+                        article.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Search Filter
+        const searchInput = document.getElementById('searchInput');
+        searchInput.addEventListener('input', (e) => {
+            const term = e.target.value.toLowerCase();
+            
+            if (featuredArticle) {
+                const text = featuredArticle.textContent.toLowerCase();
+                featuredArticle.style.display = text.includes(term) ? 'block' : 'none';
+            }
+            
+            gridArticles.forEach(article => {
+                const text = article.textContent.toLowerCase();
+                article.style.display = text.includes(term) ? 'flex' : 'none';
+            });
+        });
+
+        // Tag filter clicks
+        document.querySelectorAll('.tag-filter').forEach(tag => {
+            tag.addEventListener('click', () => {
+                const text = tag.textContent.toLowerCase();
+                searchInput.value = text;
+                searchInput.dispatchEvent(new Event('input'));
+            });
+        });
+    </script>
+</body>
+</html>
