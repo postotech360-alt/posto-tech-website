@@ -178,9 +178,9 @@
             </button>
         </div>
         <!-- Mobile navigation overlay -->
-        <div id="mobileMenuOverlay" class="fixed inset-0 z-[60] pointer-events-none md:hidden">
-            <div id="mobileMenuBackdrop" class="absolute inset-0 bg-slate-950/60 opacity-0 backdrop-blur-sm transition-opacity duration-300"></div>
-            <div id="mobileMenuPanel" class="absolute right-0 top-0 flex h-full w-[300px] translate-x-full flex-col bg-white shadow-2xl transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]">
+        <div id="mobileMenuOverlay" class="absolute left-0 top-0 z-[70] h-screen w-screen pointer-events-none md:hidden" aria-hidden="true">
+            <div id="mobileMenuBackdrop" class="absolute inset-0 bg-slate-950/60 opacity-0 backdrop-blur-sm transition-opacity duration-300 will-change-[opacity]"></div>
+            <div id="mobileMenuPanel" class="absolute right-0 top-0 flex h-screen w-[min(86vw,320px)] translate-x-full flex-col bg-white shadow-2xl transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform">
                 <div class="flex h-20 shrink-0 items-center justify-between border-b border-slate-100 px-5">
                     <a href="index.html" class="flex items-center gap-2.5">
                         <svg class="h-8 w-8" viewBox="0 0 40 40" fill="none">
@@ -258,12 +258,16 @@
                 solBtn=document.getElementById('mobileSolutionsBtn'),
                 solMenu=document.getElementById('mobileSolutionsMenu'),
                 solChevron=document.getElementById('mobileSolutionsChevron'),
-                isOpen=false;
-            function openMenu(){isOpen=true;overlay.classList.remove('pointer-events-none');backdrop.classList.remove('opacity-0');panel.classList.remove('translate-x-full');document.body.style.overflow='hidden';}
-            function closeMenu(){isOpen=false;backdrop.classList.add('opacity-0');panel.classList.add('translate-x-full');document.body.style.overflow='';setTimeout(function(){if(!isOpen)overlay.classList.add('pointer-events-none');},300);}
+                isOpen=false, closeTimer=null;
+            if(btn&&!btn.hasAttribute('aria-expanded'))btn.setAttribute('aria-expanded','false');
+            function lockScroll(locked){document.body.style.overflow=locked?'hidden':'';document.documentElement.style.overflow=locked?'hidden':'';}
+            function openMenu(){if(!overlay||!backdrop||!panel)return;isOpen=true;if(closeTimer){clearTimeout(closeTimer);closeTimer=null;}overlay.classList.remove('pointer-events-none');overlay.setAttribute('aria-hidden','false');backdrop.classList.remove('opacity-0');panel.classList.remove('translate-x-full');if(btn)btn.setAttribute('aria-expanded','true');lockScroll(true);}
+            function closeMenu(){if(!overlay||!backdrop||!panel)return;isOpen=false;backdrop.classList.add('opacity-0');panel.classList.add('translate-x-full');overlay.setAttribute('aria-hidden','true');if(btn)btn.setAttribute('aria-expanded','false');lockScroll(false);closeTimer=setTimeout(function(){if(!isOpen)overlay.classList.add('pointer-events-none');},300);}
             if(btn)btn.addEventListener('click',openMenu);
             if(closeBtn)closeBtn.addEventListener('click',closeMenu);
             if(backdrop)backdrop.addEventListener('click',closeMenu);
+            document.addEventListener('keydown',function(e){if(e.key==='Escape'&&isOpen)closeMenu();});
+            window.addEventListener('resize',function(){if(window.innerWidth>=768&&isOpen)closeMenu();});
             var page=window.location.pathname.split('/').pop()||'index.html';
             if(page==='')page='index.html';
             document.querySelectorAll('.mob-nav-link').forEach(function(link){
