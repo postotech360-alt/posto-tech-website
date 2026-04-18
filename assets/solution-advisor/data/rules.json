@@ -1,0 +1,301 @@
+[
+  {
+    "id": "display-classroom-baseline",
+    "priority": 130,
+    "conditions": {
+      "roomType": "classroom"
+    },
+    "actions": {
+      "remove": ["display_65_ifp", "display_75_ifp", "display_86_ifp"],
+      "add": ["smart_eblackboard"]
+    },
+    "rationale": "Classroom profiles start with a smart e-blackboard style teaching surface for better instructional flow."
+  },
+  {
+    "id": "display-nonclass-small",
+    "priority": 128,
+    "conditions": {
+      "all": [
+        { "field": "roomType", "in": ["meeting", "training", "boardroom", "seminar"] },
+        { "field": "roomSize", "equals": "small" }
+      ]
+    },
+    "actions": {
+      "remove": ["display_75_ifp", "display_86_ifp", "smart_eblackboard"],
+      "add": ["display_65_ifp"]
+    },
+    "rationale": "Small rooms are best matched with a 65-inch interactive display for readable and efficient collaboration."
+  },
+  {
+    "id": "display-nonclass-medium",
+    "priority": 127,
+    "conditions": {
+      "all": [
+        { "field": "roomType", "in": ["meeting", "training", "boardroom", "seminar"] },
+        { "field": "roomSize", "equals": "medium" }
+      ]
+    },
+    "actions": {
+      "remove": ["display_65_ifp", "display_86_ifp", "smart_eblackboard"],
+      "add": ["display_75_ifp"]
+    },
+    "rationale": "Medium rooms typically require a 75-inch display to maintain front-of-room clarity."
+  },
+  {
+    "id": "display-nonclass-large",
+    "priority": 126,
+    "conditions": {
+      "all": [
+        { "field": "roomType", "in": ["meeting", "training", "boardroom", "seminar"] },
+        { "field": "roomSize", "equals": "large" }
+      ]
+    },
+    "actions": {
+      "remove": ["display_65_ifp", "display_75_ifp", "smart_eblackboard"],
+      "add": ["display_86_ifp"]
+    },
+    "rationale": "Large spaces need an 86-inch display for visibility across deeper seating layouts."
+  },
+  {
+    "id": "writing-panels-enabled",
+    "priority": 120,
+    "conditions": {
+      "writingPanels": true
+    },
+    "actions": {
+      "add": ["side_writing_panels"]
+    },
+    "rationale": "Side writing panels support rapid analog explanation alongside digital content."
+  },
+  {
+    "id": "audio-profile-compact",
+    "priority": 116,
+    "conditions": {
+      "attendeeCount": { "max": 12 }
+    },
+    "actions": {
+      "remove": ["ceiling_mic_array", "audio_dsp_controller"],
+      "add": ["tabletop_mic_kit"]
+    },
+    "rationale": "Compact participant counts are served effectively with tabletop microphone coverage."
+  },
+  {
+    "id": "audio-profile-standard",
+    "priority": 115,
+    "conditions": {
+      "attendeeCount": { "min": 13, "max": 35 }
+    },
+    "actions": {
+      "remove": ["ceiling_mic_array", "audio_dsp_controller"],
+      "add": ["tabletop_mic_kit", "room_speakers"]
+    },
+    "rationale": "Standard room occupancy benefits from reinforced room speakers plus shared microphone pickup."
+  },
+  {
+    "id": "audio-profile-large",
+    "priority": 114,
+    "conditions": {
+      "attendeeCount": { "min": 36, "max": 80 }
+    },
+    "actions": {
+      "remove": ["tabletop_mic_kit"],
+      "add": ["room_speakers", "ceiling_mic_array"]
+    },
+    "rationale": "Larger attendee groups require wider audio distribution and ceiling-level microphone pickup."
+  },
+  {
+    "id": "audio-profile-extended",
+    "priority": 113,
+    "conditions": {
+      "attendeeCount": { "min": 81 }
+    },
+    "actions": {
+      "remove": ["tabletop_mic_kit"],
+      "add": ["room_speakers", "ceiling_mic_array", "audio_dsp_controller"]
+    },
+    "rationale": "Very high occupancy requires DSP-managed audio and advanced room-wide voice control."
+  },
+  {
+    "id": "hybrid-core-stack",
+    "priority": 110,
+    "conditions": {
+      "hybridRequired": true
+    },
+    "actions": {
+      "add": ["auto_framing_conference_camera", "conferencing_compute_module", "room_speakers"]
+    },
+    "rationale": "Hybrid operation requires dedicated conferencing compute, camera, and reinforced playback."
+  },
+  {
+    "id": "hybrid-large-room-upgrade",
+    "priority": 109,
+    "conditions": {
+      "all": [
+        { "field": "hybridRequired", "equals": true },
+        { "field": "attendeeCount", "min": 36 }
+      ]
+    },
+    "actions": {
+      "remove": ["tabletop_mic_kit"],
+      "add": ["ceiling_mic_array"]
+    },
+    "rationale": "Hybrid spaces with higher occupancy need distributed mic pickup instead of only tabletop devices."
+  },
+  {
+    "id": "audience-camera-enabled",
+    "priority": 108,
+    "conditions": {
+      "audienceCamera": true
+    },
+    "actions": {
+      "add": ["audience_camera"]
+    },
+    "rationale": "Audience camera enables remote participants to view learner and attendee interaction."
+  },
+  {
+    "id": "presenter-tracking-upgrade",
+    "priority": 107,
+    "conditions": {
+      "presenterTracking": true
+    },
+    "actions": {
+      "remove": ["auto_framing_conference_camera"],
+      "add": ["ai_tracking_camera"]
+    },
+    "rationale": "Presenter tracking improves framing continuity during active speaking or teaching movement."
+  },
+  {
+    "id": "recording-enabled",
+    "priority": 106,
+    "conditions": {
+      "recordingRequired": true
+    },
+    "actions": {
+      "add": ["lecture_capture_unit"]
+    },
+    "rationale": "Recording support is included to preserve sessions for revision and asynchronous access."
+  },
+  {
+    "id": "wireless-sharing-enabled",
+    "priority": 105,
+    "conditions": {
+      "wirelessPresentation": true
+    },
+    "actions": {
+      "add": ["wireless_presentation_hub"]
+    },
+    "rationale": "Wireless sharing reduces transition time and simplifies multi-presenter collaboration."
+  },
+  {
+    "id": "boardroom-control-layer",
+    "priority": 104,
+    "conditions": {
+      "roomType": "boardroom"
+    },
+    "actions": {
+      "add": ["control_touch_panel"]
+    },
+    "rationale": "Boardrooms benefit from centralized touch control for premium session execution."
+  },
+  {
+    "id": "platform-ready-compute",
+    "priority": 103,
+    "conditions": {
+      "all": [
+        { "field": "primaryPlatform", "in": ["teams", "zoom", "webex", "meet"] },
+        {
+          "any": [
+            { "field": "hybridRequired", "equals": true },
+            { "field": "recordingRequired", "equals": true }
+          ]
+        }
+      ]
+    },
+    "actions": {
+      "add": ["conferencing_compute_module"]
+    },
+    "rationale": "A dedicated compute layer improves consistency for platform-specific conferencing workflows."
+  },
+  {
+    "id": "essential-guardrails",
+    "priority": 99,
+    "conditions": {
+      "budgetOrientation": "essential"
+    },
+    "actions": {
+      "setTier": "Essential",
+      "remove": ["ai_tracking_camera", "ceiling_mic_array", "audio_dsp_controller", "control_touch_panel"]
+    },
+    "rationale": "Essential budget orientation prioritizes practical coverage and removes premium-only layers."
+  },
+  {
+    "id": "essential-large-display-fallback",
+    "priority": 98,
+    "conditions": {
+      "all": [
+        { "field": "budgetOrientation", "equals": "essential" },
+        { "field": "roomSize", "equals": "large" },
+        { "field": "roomType", "in": ["meeting", "training", "boardroom", "seminar"] }
+      ]
+    },
+    "actions": {
+      "remove": ["display_86_ifp"],
+      "add": ["display_75_ifp"]
+    },
+    "rationale": "Essential large-room profiles step down to 75-inch displays to maintain budget discipline."
+  },
+  {
+    "id": "professional-tier-default",
+    "priority": 97,
+    "conditions": {
+      "budgetOrientation": "professional"
+    },
+    "actions": {
+      "setTier": "Professional"
+    },
+    "rationale": "Professional orientation balances performance and long-term reliability."
+  },
+  {
+    "id": "premium-tier-enable",
+    "priority": 96,
+    "conditions": {
+      "budgetOrientation": "premium"
+    },
+    "actions": {
+      "setTier": "Premium",
+      "add": ["control_touch_panel"]
+    },
+    "rationale": "Premium orientation enables high-control and presentation-quality enhancements."
+  },
+  {
+    "id": "premium-display-upgrade",
+    "priority": 95,
+    "conditions": {
+      "all": [
+        { "field": "budgetOrientation", "equals": "premium" },
+        { "field": "roomType", "in": ["meeting", "training", "boardroom", "seminar"] },
+        { "field": "roomSize", "in": ["medium", "large"] }
+      ]
+    },
+    "actions": {
+      "remove": ["display_65_ifp", "display_75_ifp"],
+      "add": ["display_86_ifp"]
+    },
+    "rationale": "Premium non-classroom deployments prioritize larger display impact and readability."
+  },
+  {
+    "id": "premium-hybrid-video-upgrade",
+    "priority": 94,
+    "conditions": {
+      "all": [
+        { "field": "budgetOrientation", "equals": "premium" },
+        { "field": "hybridRequired", "equals": true }
+      ]
+    },
+    "actions": {
+      "remove": ["auto_framing_conference_camera"],
+      "add": ["ai_tracking_camera", "ceiling_mic_array"]
+    },
+    "rationale": "Premium hybrid rooms are upgraded to AI tracking video and advanced ceiling audio capture."
+  }
+]

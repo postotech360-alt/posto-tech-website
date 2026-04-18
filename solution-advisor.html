@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution Advisor | POSTO Tech Room Design Guidance</title>
+    <meta name="description" content="Design your ideal smart classroom, meeting room, or boardroom with POSTO Tech's interactive solution advisor. Get tailored recommendations, layout guidance, and consultation support.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://www.postolabs.com/solution-advisor.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="POSTO Tech">
+    <meta property="og:title" content="POSTO Tech Solution Advisor">
+    <meta property="og:description" content="Answer a few guided questions and receive a tailored AV and smart room recommendation with visual layout guidance.">
+    <meta property="og:url" content="https://www.postolabs.com/solution-advisor.html">
+    <meta property="og:image" content="https://www.postolabs.com/assets/images/hero/hero-classroom-smart.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/site.css">
+    <link rel="stylesheet" href="assets/solution-advisor/solution-advisor.css?v=20260418p">
+    <link rel="stylesheet" href="assets/solution-advisor/layout-v2.css?v=20260418j">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="shortcut icon" href="assets/favicon.svg">
+    <meta name="theme-color" content="#2563eb">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H54V7JMXMR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-H54V7JMXMR');
+    </script>
+    <script src="https://tally.so/widgets/embed.js" async></script>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-200 selection:text-blue-900">
+    <style>
+        .logo-mark { transition: transform 0.3s ease; }
+        .logo-mark rect { transition: all 0.3s ease; }
+        a:hover .logo-mark { transform: scale(1.05); }
+        a:hover .logo-mark rect:nth-child(1) { fill: #3b82f6; }
+        a:hover .logo-mark rect:nth-child(2) { fill: #0f172a; }
+        a:hover .logo-mark rect:nth-child(3) { fill: #0f172a; }
+        a:hover .logo-mark rect:nth-child(4) { fill: #3b82f6; }
+    </style>
+
+    <nav class="fixed inset-x-0 top-0 z-50 border-b border-white/20 bg-white/70 backdrop-blur-xl">
+        <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
+            <a href="index.html" class="group flex items-center gap-3">
+                <svg class="logo-mark h-10 w-10 drop-shadow-lg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoDark" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+                        </linearGradient>
+                        <linearGradient id="logoBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect x="4" y="4" width="14" height="14" rx="3" fill="url(#logoDark)"/>
+                    <rect x="22" y="4" width="14" height="14" rx="3" fill="url(#logoBlue)"/>
+                    <rect x="4" y="22" width="14" height="14" rx="3" fill="url(#logoBlue)"/>
+                    <rect x="22" y="22" width="14" height="14" rx="3" fill="url(#logoDark)"/>
+                </svg>
+                <span class="text-2xl font-extrabold tracking-tight">
+                    <span class="bg-gradient-to-r from-slate-950 to-slate-700 bg-clip-text text-transparent">POSTO</span><span class="text-blue-600">Tech</span>
+                </span>
+            </a>
+            <div class="hidden items-center gap-8 md:flex">
+                <a href="products.html" class="text-sm font-medium text-slate-600 transition hover:text-blue-600">Products</a>
+                <a href="solutions.html" class="text-sm font-medium text-slate-600 transition hover:text-blue-600">Solutions</a>
+                <a href="business-solutions.html" class="text-sm font-medium text-slate-600 transition hover:text-blue-600">Enterprise</a>
+                <a href="insights.html" class="text-sm font-medium text-slate-600 transition hover:text-blue-600">Insights</a>
+                <a href="solution-advisor.html" class="text-sm font-bold text-blue-600">Advisor</a>
+                <a href="about.html" class="text-sm font-medium text-slate-600 transition hover:text-blue-600">About</a>
+                <a href="contact.html" class="text-sm font-medium text-slate-600 transition hover:text-blue-600">Contact</a>
+            </div>
+            <a href="contact.html" class="hidden rounded-full bg-slate-950 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-600 md:block">Get in Touch</a>
+        </div>
+        <div class="border-t border-slate-200/70 bg-white/90 md:hidden">
+            <div class="mx-auto flex max-w-7xl items-center justify-between gap-2 overflow-x-auto pl-3 pr-8 py-3 text-[11px] font-semibold text-slate-600">
+                <a href="index.html" class="whitespace-nowrap">Home</a>
+                <a href="business-solutions.html" class="whitespace-nowrap">Enterprise</a>
+                <a href="solutions.html" class="whitespace-nowrap">Solutions</a>
+                <a href="products.html" class="whitespace-nowrap">Products</a>
+                <a href="insights.html" class="whitespace-nowrap">Insights</a>
+                <a href="solution-advisor.html" class="whitespace-nowrap text-blue-600">Advisor</a>
+                <a href="about.html" class="whitespace-nowrap">About</a>
+                <a href="contact.html" class="whitespace-nowrap">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32 md:pt-20">
+        <section class="relative overflow-hidden px-6 py-20 lg:px-8" data-reveal>
+            <div class="absolute inset-0 -z-10">
+                <img src="assets/images/hero/hero-classroom-smart.jpg" alt="" class="h-full w-full object-cover object-center">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/75 to-slate-900/65"></div>
+            </div>
+            <div class="mx-auto max-w-7xl">
+                <div class="max-w-3xl">
+                    <p class="inline-flex items-center gap-2 rounded-full border border-blue-300/25 bg-blue-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.22em] text-blue-200">
+                        <span class="status-dot status-dot-blue"></span>
+                        Interactive Solution Advisor
+                    </p>
+                    <h1 class="mt-6 text-4xl font-extrabold leading-tight tracking-tight text-white md:text-5xl lg:text-6xl">Design the right room solution in minutes</h1>
+                    <p class="mt-6 max-w-2xl text-lg leading-relaxed text-slate-200">Answer a guided set of questions and receive a tailored POSTO Tech recommendation with equipment rationale, room layout zones, and a clear path to consultation.</p>
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <a href="#advisor-tool" class="rounded-full bg-white px-8 py-4 text-sm font-bold text-slate-950 transition hover:bg-blue-50 hover:-translate-y-0.5">Start Advisor</a>
+                        <a href="contact.html" class="rounded-full border border-white/30 bg-white/10 px-8 py-4 text-sm font-bold text-white backdrop-blur-sm transition hover:bg-white/20 hover:-translate-y-0.5">Talk to a Solution Expert</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What You'll Get Row -->
+        <section class="bg-white px-6 py-10 lg:px-8">
+            <div class="mx-auto max-w-5xl">
+                <div class="grid gap-6 rounded-2xl border border-slate-200 bg-slate-50 p-8 sm:grid-cols-3">
+                    <div class="flex items-start gap-4">
+                        <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-100 text-blue-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" /></svg>
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-slate-950">Tailored equipment bundle</p>
+                            <p class="mt-1 text-xs leading-relaxed text-slate-500">Curated product selection matched to your room type, size, and use case.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-100 text-blue-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" /></svg>
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-slate-950">Visual overhead room layout</p>
+                            <p class="mt-1 text-xs leading-relaxed text-slate-500">An interactive floor plan showing where each device fits in your space.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-100 text-blue-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" /></svg>
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-slate-950">Clear path to consultation</p>
+                            <p class="mt-1 text-xs leading-relaxed text-slate-500">Direct connection to the POSTO team for final scoping and deployment planning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="advisor-tool" class="advisor-section-bg px-6 py-16 lg:px-8">
+            <div class="mx-auto max-w-7xl">
+                <div class="grid gap-8 xl:grid-cols-[1.15fr_0.85fr]">
+                    <div class="advisor-glass p-6 md:p-8" data-reveal>
+                        <div class="flex items-center justify-between gap-4">
+                            <p id="advisorProgressLabel" class="text-xs font-bold uppercase tracking-[0.22em] text-slate-500">Step 1 of 4</p>
+                        </div>
+                        <div class="advisor-progress-track mt-3 h-2.5 rounded-full">
+                            <div id="advisorProgressBar" class="advisor-progress-bar h-full rounded-full" style="width: 25%"></div>
+                        </div>
+                        <div id="advisorStepPills" class="mt-5 flex flex-wrap gap-2"></div>
+
+                        <div class="mt-10">
+                            <h2 id="advisorStepTitle" class="text-2xl font-extrabold tracking-tight text-slate-950 md:text-3xl">Room Basics</h2>
+                            <p id="advisorStepDescription" class="mt-2 text-sm leading-relaxed text-slate-600 md:text-base"></p>
+                        </div>
+
+                        <div id="advisorError" class="mt-5 hidden"></div>
+
+                        <div id="advisorFormFields" class="mt-8"></div>
+
+                        <div class="mt-10 flex flex-wrap items-center justify-between gap-3">
+                            <button id="advisorPrevBtn" type="button">Back</button>
+                            <button id="advisorNextBtn" type="button">Next Step</button>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="advisor-glass p-6 md:p-8" data-reveal>
+                            <div class="flex items-center gap-3">
+                                <div class="icon-badge">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-bold uppercase tracking-[0.22em] text-slate-500">How this works</p>
+                                </div>
+                            </div>
+                            <ul class="mt-5 space-y-3 text-sm text-slate-700">
+                                <li class="flex items-start gap-3"><span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-blue-100 text-[10px] font-bold text-blue-700">1</span><span>Capture your room profile and usage needs</span></li>
+                                <li class="flex items-start gap-3"><span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-blue-100 text-[10px] font-bold text-blue-700">2</span><span>Apply deterministic recommendation rules</span></li>
+                                <li class="flex items-start gap-3"><span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-blue-100 text-[10px] font-bold text-blue-700">3</span><span>Return a consultative equipment bundle</span></li>
+                                <li class="flex items-start gap-3"><span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-blue-100 text-[10px] font-bold text-blue-700">4</span><span>Show room zones and clickable device labels</span></li>
+                            </ul>
+                        </div>
+                        <div class="advisor-glass p-6 md:p-8" data-reveal>
+                            <div class="flex items-center gap-3">
+                                <div class="icon-badge">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-bold uppercase tracking-[0.22em] text-slate-500">Designed For Pakistan</p>
+                                </div>
+                            </div>
+                            <p class="mt-4 text-sm leading-relaxed text-slate-700">This advisor supports education, enterprise, training, and institutional room scenarios common in Pakistan, while keeping recommendations clear for non-technical buyers.</p>
+                        </div>
+                        <div class="advisor-glass p-6 md:p-8" data-reveal>
+                            <div class="flex items-center gap-3">
+                                <div class="icon-badge">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-bold uppercase tracking-[0.22em] text-slate-500">Current Project Snapshot</p>
+                                </div>
+                            </div>
+                            <ul id="advisorSnapshotList" class="advisor-snapshot-list mt-5">
+                                <li>Start the questionnaire to build your room profile.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="advisorResultSection" class="hidden px-6 pb-24 lg:px-8">
+            <div class="mx-auto max-w-7xl space-y-8">
+                <div class="advisor-glass p-6 md:p-10" data-reveal>
+                    <div class="flex flex-wrap items-center justify-between gap-4">
+                        <h3 class="text-2xl font-extrabold tracking-tight text-slate-950 md:text-3xl">Recommended Solution Overview</h3>
+                        <span id="advisorTierBadge" class="advisor-tier-badge"></span>
+                    </div>
+                    <p id="advisorTierDescription" class="mt-2 text-sm text-slate-500"></p>
+                    <p id="advisorSummaryText" class="mt-4 max-w-4xl text-base leading-relaxed text-slate-700 md:text-lg"></p>
+                    <div id="advisorFitBadges" class="advisor-fit-badges mt-6"></div>
+                    <div class="advisor-result-meta mt-6 pt-6 border-t border-slate-200">
+                        <span id="advisorComponentCount">0 Components Recommended</span>
+                        <span id="advisorProfileLine">Profile not generated yet</span>
+                    </div>
+                </div>
+
+                <div class="advisor-result-layout">
+                    <div class="advisor-result-main space-y-8">
+                        <div class="advisor-glass p-6 md:p-8" data-reveal>
+                            <h4 class="text-lg font-extrabold text-slate-950 md:text-xl">Recommended Equipment Bundle</h4>
+                            <div id="advisorProductGrid" class="mt-6 space-y-6"></div>
+                        </div>
+
+                        <div class="advisor-glass p-6 md:p-8" data-reveal>
+                            <h4 class="text-lg font-extrabold text-slate-950 md:text-xl">Solution Fit Snapshot</h4>
+                            <ul id="advisorFitList" class="advisor-fit-list mt-5"></ul>
+                        </div>
+
+                        <div class="advisor-glass p-6 md:p-8" data-reveal>
+                            <h4 class="text-lg font-extrabold text-slate-950 md:text-xl">Advisory Notes</h4>
+                            <div id="advisorRationaleList" class="mt-5 divide-y divide-slate-100"></div>
+                        </div>
+                    </div>
+                    <div class="advisor-result-side space-y-8">
+                        <div class="advisor-glass p-6 md:p-8" data-reveal>
+                            <div class="flex items-center justify-between gap-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-blue-100 text-blue-600">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" /></svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-extrabold text-slate-950 md:text-xl">Visual Room Layout</h4>
+                                        <p class="text-xs text-slate-500 mt-0.5">Click any label on the floor plan to inspect that device</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="advisorLayoutCanvas" class="mt-6"></div>
+                        </div>
+
+                        <div id="advisorHotspotPanel" class="advisor-hotspot-panel p-6 md:p-8" role="region" aria-live="polite" aria-atomic="true" data-reveal>
+                            <div class="flex items-start gap-3">
+                                <div class="icon-badge mt-0.5 shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-semibold text-slate-900">Explore your room</p>
+                                    <p class="advisor-detail-copy mt-1">Click any room label to view what that device contributes to your solution. Room details and meeting room equipment are shown with the layout.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="advisor-cta-panel p-6 md:p-8" data-reveal>
+                            <h4 class="text-xl font-extrabold md:text-2xl">Ready for a tailored proposal?</h4>
+                            <p class="mt-3 text-sm leading-relaxed text-blue-100 md:text-base">Share your advisor result with POSTO Tech for final room assessment, exact bill of quantity, and deployment planning.</p>
+                            <div class="mt-6 flex flex-wrap gap-3">
+                                <button id="advisorCtaConsultation" type="button" data-tally-open="QKB5B8" data-tally-width="500" data-tally-overlay="1" class="rounded-full bg-white px-6 py-3 text-sm font-bold text-blue-700 transition hover:bg-blue-50 hover:-translate-y-0.5">Request Consultation</button>
+                                <a id="advisorCtaProposal" href="contact.html" class="rounded-full border border-white/40 bg-white/10 px-6 py-3 text-sm font-bold text-white backdrop-blur-sm transition hover:bg-white/15 hover:-translate-y-0.5">Get Proposal</a>
+                            </div>
+                            <div class="advisor-share-row">
+                                <button id="advisorCopyBtn" type="button" class="advisor-share-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+                                    Copy Summary
+                                </button>
+                                <button id="advisorWhatsAppBtn" type="button" class="advisor-share-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.531 5.852L.057 23.246a.75.75 0 00.916.916l5.395-1.474A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.944 0-3.77-.5-5.363-1.38l-.384-.215-3.985 1.088 1.088-3.985-.215-.384A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+                                    Share on WhatsApp
+                                </button>
+                            </div>
+                            <button id="advisorResetBtn" type="button" class="mt-4 text-xs font-semibold uppercase tracking-[0.14em] text-blue-200 underline-offset-4 hover:text-white hover:underline transition">Start Over</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white">
+        <div class="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-3 lg:px-8">
+            <div>
+                <a href="index.html" class="text-2xl font-extrabold tracking-tight text-slate-950">POSTO<span class="text-blue-600">Tech</span></a>
+                <p class="mt-4 text-sm leading-relaxed text-slate-600">Premium interactive collaboration and AV systems for enterprise and education in Pakistan.</p>
+            </div>
+            <div>
+                <h3 class="text-xs font-bold uppercase tracking-[0.22em] text-slate-500">Quick Links</h3>
+                <nav class="mt-4 space-y-2">
+                    <a href="products.html" class="block text-slate-600 transition hover:text-blue-600">Products</a>
+                    <a href="solutions.html" class="block text-slate-600 transition hover:text-blue-600">Solutions</a>
+                    <a href="business-solutions.html" class="block text-slate-600 transition hover:text-blue-600">Enterprise</a>
+                    <a href="insights.html" class="block text-slate-600 transition hover:text-blue-600">Insights</a>
+                    <a href="solution-advisor.html" class="block text-blue-600 transition hover:text-blue-700">Solution Advisor</a>
+                    <a href="about.html" class="block text-slate-600 transition hover:text-blue-600">About</a>
+                    <a href="contact.html" class="block text-slate-600 transition hover:text-blue-600">Contact</a>
+                </nav>
+            </div>
+            <div>
+                <h3 class="text-xs font-bold uppercase tracking-[0.22em] text-slate-500">Contact</h3>
+                <div class="mt-4 space-y-2 text-sm text-slate-600">
+                    <p>POSTO Tech Solutions Team</p>
+                    <p><a href="tel:+9233999887766" class="transition hover:text-blue-600">+92-33 99887766</a></p>
+                    <p><a href="mailto:contact@postolabs.com" class="transition hover:text-blue-600">contact@postolabs.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll reveal observer for advisor sections
+        (function() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('advisor-reveal', 'is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+
+            document.querySelectorAll('[data-reveal]').forEach((el) => {
+                el.classList.add('advisor-reveal');
+                observer.observe(el);
+            });
+        })();
+    </script>
+
+    <script src="assets/solution-advisor/questions.js?v=20260418h" defer></script>
+    <script src="assets/solution-advisor/data/seed.js?v=20260417d" defer></script>
+    <script src="assets/solution-advisor/engine.js?v=20260418h" defer></script>
+    <script src="assets/solution-advisor/layout-v2.js?v=20260418h" defer></script>
+    <script src="assets/solution-advisor/ui.js?v=20260418j" defer></script>
+</body>
+</html>

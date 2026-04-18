@@ -34,6 +34,14 @@ The website uses a modern, clean design with a blue/slate color palette, featuri
 └── AGENTS.md           # This file
 ```
 
+## Feature-Specific Agent Rules
+
+For the Interactive Solution Advisor, use the dedicated scoped guide:
+
+- `components/solution-advisor/AGENTS.md`
+
+When working on advisor-specific files (questionnaire flow, recommendation rules, room layout/hotspots, catalog mapping), that scoped guide should be treated as the primary implementation instruction set, while this root file remains the global baseline.
+
 ## Page Architecture
 
 ### index.html (Home)
@@ -64,7 +72,7 @@ The website uses a modern, clean design with a blue/slate color palette, featuri
 
 ### contact.html
 - Hero panel with CTA
-- Direct contact information (Jalil Raza)
+- Direct contact information (solutions team)
 - "What To Share" guidance for inquiries
 
 ## Design System
@@ -161,7 +169,7 @@ When adding new pages, update the navigation in all HTML files. The navigation i
 
 ### Contact Information
 The contact details are centralized in `contact.html` and the footer of `index.html`:
-- Contact Person: Jalil Raza
+- Contact Team: POSTO Tech Solutions Team
 - Phone: +92-33 99887766
 - Email: contact@postolabs.com
 - Website: https://www.postolabs.com

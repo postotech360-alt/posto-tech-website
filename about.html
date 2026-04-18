@@ -33,6 +33,326 @@
         a:hover .logo-mark rect:nth-child(2) { fill: #0f172a; }
         a:hover .logo-mark rect:nth-child(3) { fill: #0f172a; }
         a:hover .logo-mark rect:nth-child(4) { fill: #3b82f6; }
+
+        /* ── Deployment Showcase ───────────────────────────────────── */
+
+        .deployment-showcase {
+            border: 1px solid #dbe5f3;
+            border-radius: 2rem;
+            background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+            box-shadow: 0 16px 36px rgba(15, 23, 42, 0.07);
+            overflow: hidden;
+            max-width: 1100px;
+            margin-inline: auto;
+        }
+
+        .deployment-showcase:focus-visible {
+            outline: none;
+            box-shadow:
+                0 0 0 3px rgba(147, 197, 253, 0.45),
+                0 16px 36px rgba(15, 23, 42, 0.07);
+        }
+
+        .deployment-layout {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        /* Featured image panel — full width, larger */
+        .deployment-feature {
+            position: relative;
+            aspect-ratio: 16 / 9;
+            width: 100%;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            border: 1px solid rgba(148, 163, 184, 0.25);
+            background: #e2e8f0;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+        }
+
+        .deployment-feature img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            transition: transform 0.7s ease;
+        }
+
+        .deployment-feature:hover img {
+            transform: scale(1.03);
+        }
+
+        .deployment-feature::after {
+            content: "";
+            position: absolute;
+            inset: auto 0 0 0;
+            height: 55%;
+            background: linear-gradient(
+                180deg,
+                rgba(15, 23, 42, 0) 0%,
+                rgba(15, 23, 42, 0.55) 60%,
+                rgba(15, 23, 42, 0.82) 100%
+            );
+            pointer-events: none;
+        }
+
+        .deployment-feature__caption {
+            position: absolute;
+            left: 1.25rem;
+            right: 1.25rem;
+            bottom: 1.1rem;
+            z-index: 1;
+            color: #fff;
+        }
+
+        .deployment-feature__eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            margin: 0;
+            border-radius: 9999px;
+            border: 1px solid rgba(147, 197, 253, 0.4);
+            background: rgba(30, 58, 138, 0.45);
+            padding: 0.24rem 0.6rem;
+            font-size: 0.62rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #dbeafe;
+            backdrop-filter: blur(4px);
+        }
+
+        .deployment-feature__title {
+            margin: 0.55rem 0 0;
+            font-size: 1.35rem;
+            font-weight: 800;
+            line-height: 1.25;
+            letter-spacing: -0.01em;
+        }
+
+        .deployment-feature__sub {
+            margin: 0.22rem 0 0;
+            font-size: 0.9rem;
+            color: rgba(226, 232, 240, 0.9);
+            font-weight: 500;
+        }
+
+        /* Info bar between image and thumbnails */
+        .deployment-info-bar {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 0 0.25rem;
+        }
+
+        .deployment-info-text {
+            flex: 1 1 auto;
+            min-width: 0;
+        }
+
+        .deployment-info-text p:first-child {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: #64748b;
+        }
+
+        .deployment-info-text p:last-child {
+            margin-top: 0.35rem;
+            font-size: 0.82rem;
+            line-height: 1.5;
+            color: #64748b;
+        }
+
+        .deployment-nav {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            flex-shrink: 0;
+            padding-top: 0.1rem;
+        }
+
+        .deployment-index {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: #334155;
+            margin-right: 0.25rem;
+        }
+
+        /* Navigation controls */
+        .deployment-control {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 2.25rem;
+            min-width: 2.25rem;
+            border-radius: 9999px;
+            border: 1px solid #cbd5e1;
+            background: #fff;
+            color: #1e293b;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .deployment-control:hover {
+            border-color: #93c5fd;
+            color: #1d4ed8;
+            box-shadow: 0 8px 16px rgba(37, 99, 235, 0.14);
+            transform: translateY(-1px);
+        }
+
+        .deployment-control:focus-visible {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+        }
+
+        /* Horizontal thumbnail filmstrip */
+        .deployment-thumbs-row {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        /* Thumbnail cards — stacked vertically for horizontal row layout */
+        .deployment-thumb {
+            flex: 1 1 0;
+            min-width: 0;
+            border: 1px solid #dbe5f3;
+            border-radius: 1rem;
+            background: #fff;
+            padding: 0.5rem;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 0.5rem;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .deployment-thumb:hover {
+            border-color: #93c5fd;
+            background: #f8fbff;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.08);
+        }
+
+        .deployment-thumb.is-active {
+            border-color: #3b82f6;
+            background: #eff6ff;
+            box-shadow: 0 12px 24px rgba(37, 99, 235, 0.13);
+        }
+
+        .deployment-thumb__media {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border-radius: 0.6rem;
+            overflow: hidden;
+            background: #e2e8f0;
+            position: relative;
+            flex-shrink: 0;
+        }
+
+        .deployment-thumb__media img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .deployment-thumb:hover .deployment-thumb__media img {
+            transform: scale(1.06);
+        }
+
+        .deployment-thumb__body {
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.1rem;
+            padding: 0 0.15rem 0.15rem;
+        }
+
+        .deployment-thumb__title {
+            margin: 0;
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: #0f172a;
+            line-height: 1.35;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .deployment-thumb__meta {
+            margin: 0;
+            font-size: 0.68rem;
+            color: #64748b;
+            font-weight: 500;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 767px) {
+            .deployment-feature__title {
+                font-size: 1.05rem;
+            }
+
+            .deployment-feature__sub {
+                font-size: 0.8rem;
+            }
+
+            .deployment-feature__caption {
+                left: 1rem;
+                right: 1rem;
+                bottom: 0.85rem;
+            }
+
+            .deployment-feature {
+                border-radius: 1.25rem;
+            }
+
+            .deployment-info-bar {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            .deployment-nav {
+                align-self: flex-end;
+            }
+
+            .deployment-thumbs-row {
+                gap: 0.5rem;
+                overflow-x: auto;
+                padding-bottom: 0.5rem;
+                scroll-snap-type: x mandatory;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .deployment-thumb {
+                flex: 0 0 auto;
+                width: 140px;
+                scroll-snap-align: start;
+            }
+
+            .deployment-thumb__title {
+                font-size: 0.72rem;
+            }
+
+            .deployment-thumb__meta {
+                font-size: 0.65rem;
+            }
+        }
+
+        /* Very small mobile */
+        @media (max-width: 359px) {
+            .deployment-thumb {
+                width: 120px;
+            }
+        }
     </style>
 
     <!-- Navigation -->
@@ -64,6 +384,7 @@
                 <a href="solutions.html" class="text-sm font-medium text-slate-600 transition hover:text-blue-600">Solutions</a>
                 <a href="business-solutions.html" class="text-sm font-medium text-slate-600 transition hover:text-blue-600">Enterprise</a>
                 <a href="insights.html" class="text-sm font-medium text-slate-600 transition hover:text-blue-600">Insights</a>
+                <a href="solution-advisor.html" class="text-sm font-medium text-slate-600 transition hover:text-blue-600">Advisor</a>
                 <a href="about.html" class="text-sm font-bold text-blue-600">About</a>
                 <a href="contact.html" class="text-sm font-medium text-slate-600 transition hover:text-blue-600">Contact</a>
             </div>
@@ -78,6 +399,7 @@
                 <a href="solutions.html" class="whitespace-nowrap">Solutions</a>
                 <a href="products.html" class="whitespace-nowrap">Products</a>
                 <a href="insights.html" class="whitespace-nowrap">Insights</a>
+                <a href="solution-advisor.html" class="whitespace-nowrap">Advisor</a>
                 <a href="about.html" class="whitespace-nowrap text-blue-600">About</a>
                 <a href="contact.html" class="whitespace-nowrap">Contact</a>
             </div>
@@ -254,6 +576,105 @@
             </div>
         </section>
 
+        <!-- Live Deployments -->
+        <section class="bg-white px-6 py-20 lg:px-8">
+            <div class="mx-auto max-w-6xl">
+                <div class="max-w-3xl">
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Deployment Portfolio</p>
+                    <h2 class="mt-4 text-3xl font-extrabold tracking-tight text-slate-950 md:text-4xl">
+                        Reference Deployments
+                    </h2>
+                    <p class="mt-4 text-lg text-slate-600">
+                        A representative cross-section of completed AV environments across Pakistan's leading institutions — from system design and integration through commissioning and handover.
+                    </p>
+                </div>
+
+                <div class="deployment-showcase mt-10 p-5 sm:p-6 lg:p-8" tabindex="0" aria-label="POSTO Tech live deployment showcase">
+                    <div class="deployment-layout">
+                        <figure class="deployment-feature">
+                            <img id="deploymentFeaturedImage" src="assets/images/about/deployments/computer-lab-paf-iast.jpg?v=20260418b" alt="Computer Lab PAF-IAST deployment">
+                            <figcaption class="deployment-feature__caption">
+                                <p class="deployment-feature__eyebrow">
+                                    <span class="inline-block h-1.5 w-1.5 rounded-full bg-blue-300"></span>
+                                    <span id="deploymentFeaturedType">Computer Lab Deployment</span>
+                                </p>
+                                <h3 id="deploymentFeaturedTitle" class="deployment-feature__title">Computer Lab PAF-IAST</h3>
+                                <p id="deploymentFeaturedSub" class="deployment-feature__sub">PAF-IAST · Computer Lab</p>
+                            </figcaption>
+                        </figure>
+
+                        <div class="deployment-info-bar">
+                            <div class="deployment-info-text">
+                                <p>Project Index</p>
+                                <p>Browse installed learning and collaboration environments delivered by POSTO Tech. Each entry represents a complete system deployment.</p>
+                            </div>
+                            <div class="deployment-nav">
+                                <span class="deployment-index">Project <span id="deploymentFeaturedIndex">1/5</span></span>
+                                <button id="deploymentPrevBtn" type="button" class="deployment-control" aria-label="Previous deployment">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                                    </svg>
+                                </button>
+                                <button id="deploymentNextBtn" type="button" class="deployment-control" aria-label="Next deployment">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="deployment-thumbs-row">
+                            <button type="button" class="deployment-thumb is-active" data-deployment-index="0" aria-pressed="true">
+                                <div class="deployment-thumb__media">
+                                    <img src="assets/images/about/deployments/computer-lab-paf-iast.jpg?v=20260418b" alt="Computer Lab PAF-IAST thumbnail">
+                                </div>
+                                <div class="deployment-thumb__body">
+                                    <p class="deployment-thumb__title">Computer Lab PAF-IAST</p>
+                                    <p class="deployment-thumb__meta">Computer Lab</p>
+                                </div>
+                            </button>
+                            <button type="button" class="deployment-thumb" data-deployment-index="1" aria-pressed="false">
+                                <div class="deployment-thumb__media">
+                                    <img src="assets/images/about/deployments/lecture-hall-paf-iast.jpg?v=20260418b" alt="Lecture Hall PAF-IAST thumbnail">
+                                </div>
+                                <div class="deployment-thumb__body">
+                                    <p class="deployment-thumb__title">Lecture Hall PAF-IAST</p>
+                                    <p class="deployment-thumb__meta">Lecture Hall</p>
+                                </div>
+                            </button>
+                            <button type="button" class="deployment-thumb" data-deployment-index="2" aria-pressed="false">
+                                <div class="deployment-thumb__media">
+                                    <img src="assets/images/about/deployments/classroom-paf-iast.jpg?v=20260418b" alt="Classroom at PAF-IAST thumbnail">
+                                </div>
+                                <div class="deployment-thumb__body">
+                                    <p class="deployment-thumb__title">Classroom at PAF-IAST</p>
+                                    <p class="deployment-thumb__meta">Classroom</p>
+                                </div>
+                            </button>
+                            <button type="button" class="deployment-thumb" data-deployment-index="3" aria-pressed="false">
+                                <div class="deployment-thumb__media">
+                                    <img src="assets/images/about/deployments/lecture-hall-giki.jpg?v=20260418b" alt="Lecture Hall GIKI thumbnail">
+                                </div>
+                                <div class="deployment-thumb__body">
+                                    <p class="deployment-thumb__title">Lecture Hall GIKI</p>
+                                    <p class="deployment-thumb__meta">Lecture Hall</p>
+                                </div>
+                            </button>
+                            <button type="button" class="deployment-thumb" data-deployment-index="4" aria-pressed="false">
+                                <div class="deployment-thumb__media">
+                                    <img src="assets/images/about/deployments/lecture-room-nust.jpg?v=20260418b" alt="Lecture Room NUST thumbnail">
+                                </div>
+                                <div class="deployment-thumb__body">
+                                    <p class="deployment-thumb__title">Lecture Room NUST</p>
+                                    <p class="deployment-thumb__meta">Lecture Room</p>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Industries -->
         <section class="bg-white px-6 py-20 lg:px-8">
             <div class="mx-auto max-w-7xl">
@@ -367,6 +788,7 @@
                         <a href="solutions.html" class="block text-slate-600 transition hover:text-blue-600">Solutions</a>
                         <a href="business-solutions.html" class="block text-slate-600 transition hover:text-blue-600">Enterprise</a>
                         <a href="insights.html" class="block text-slate-600 transition hover:text-blue-600">Insights</a>
+                        <a href="solution-advisor.html" class="block text-slate-600 transition hover:text-blue-600">Solution Advisor</a>
                         <a href="about.html" class="block text-slate-600 transition hover:text-blue-600">About</a>
                         <a href="contact.html" class="block text-slate-600 transition hover:text-blue-600">Contact</a>
                     </nav>
@@ -399,6 +821,135 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        (function initDeploymentShowcase() {
+            const projects = [
+                {
+                    title: "Computer Lab PAF-IAST",
+                    subtitle: "PAF-IAST · Computer Lab",
+                    type: "Computer Lab Deployment",
+                    image: "assets/images/about/deployments/computer-lab-paf-iast.jpg?v=20260418b"
+                },
+                {
+                    title: "Lecture Hall PAF-IAST",
+                    subtitle: "PAF-IAST · Lecture Hall",
+                    type: "Lecture Hall Deployment",
+                    image: "assets/images/about/deployments/lecture-hall-paf-iast.jpg?v=20260418b"
+                },
+                {
+                    title: "Classroom at PAF-IAST",
+                    subtitle: "PAF-IAST · Classroom",
+                    type: "Classroom Deployment",
+                    image: "assets/images/about/deployments/classroom-paf-iast.jpg?v=20260418b"
+                },
+                {
+                    title: "Lecture Hall GIKI",
+                    subtitle: "GIKI · Lecture Hall",
+                    type: "Lecture Hall Deployment",
+                    image: "assets/images/about/deployments/lecture-hall-giki.jpg?v=20260418b"
+                },
+                {
+                    title: "Lecture Room NUST",
+                    subtitle: "NUST · Lecture Room",
+                    type: "Lecture Room Deployment",
+                    image: "assets/images/about/deployments/lecture-room-nust.jpg?v=20260418b"
+                }
+            ];
+
+            const featuredImage = document.getElementById("deploymentFeaturedImage");
+            const featuredTitle = document.getElementById("deploymentFeaturedTitle");
+            const featuredSub = document.getElementById("deploymentFeaturedSub");
+            const featuredType = document.getElementById("deploymentFeaturedType");
+            const featuredIndex = document.getElementById("deploymentFeaturedIndex");
+            const prevBtn = document.getElementById("deploymentPrevBtn");
+            const nextBtn = document.getElementById("deploymentNextBtn");
+            const thumbs = Array.from(document.querySelectorAll(".deployment-thumb"));
+
+            if (!featuredImage || !featuredTitle || !featuredSub || !featuredType || !featuredIndex || !prevBtn || !nextBtn || !thumbs.length) {
+                return;
+            }
+
+            let activeIndex = 0;
+            let autoTimer = null;
+
+            function render(index) {
+                const normalized = (index + projects.length) % projects.length;
+                const project = projects[normalized];
+                activeIndex = normalized;
+
+                featuredImage.src = project.image;
+                featuredImage.alt = project.title + " deployment image";
+                featuredTitle.textContent = project.title;
+                featuredSub.textContent = project.subtitle;
+                featuredType.textContent = project.type;
+                featuredIndex.textContent = `${normalized + 1}/${projects.length}`;
+
+                thumbs.forEach((thumb, thumbIndex) => {
+                    const isActive = thumbIndex === normalized;
+                    thumb.classList.toggle("is-active", isActive);
+                    thumb.setAttribute("aria-pressed", isActive ? "true" : "false");
+                });
+            }
+
+            function goTo(index) {
+                render(index);
+            }
+
+            function startAuto() {
+                stopAuto();
+                autoTimer = window.setInterval(() => {
+                    goTo(activeIndex + 1);
+                }, 5800);
+            }
+
+            function stopAuto() {
+                if (autoTimer) {
+                    window.clearInterval(autoTimer);
+                    autoTimer = null;
+                }
+            }
+
+            prevBtn.addEventListener("click", () => {
+                goTo(activeIndex - 1);
+                startAuto();
+            });
+
+            nextBtn.addEventListener("click", () => {
+                goTo(activeIndex + 1);
+                startAuto();
+            });
+
+            thumbs.forEach((thumb) => {
+                thumb.setAttribute("aria-pressed", "false");
+                thumb.addEventListener("click", () => {
+                    const index = Number(thumb.dataset.deploymentIndex || 0);
+                    goTo(index);
+                    startAuto();
+                });
+            });
+
+            const showcaseRoot = featuredImage.closest(".deployment-showcase");
+            if (showcaseRoot) {
+                showcaseRoot.addEventListener("mouseenter", stopAuto);
+                showcaseRoot.addEventListener("mouseleave", startAuto);
+                showcaseRoot.addEventListener("keydown", (event) => {
+                    if (event.key === "ArrowLeft") {
+                        event.preventDefault();
+                        goTo(activeIndex - 1);
+                        startAuto();
+                    } else if (event.key === "ArrowRight") {
+                        event.preventDefault();
+                        goTo(activeIndex + 1);
+                        startAuto();
+                    }
+                });
+            }
+
+            render(0);
+            startAuto();
+        })();
+    </script>
 
 </body>
 </html>
