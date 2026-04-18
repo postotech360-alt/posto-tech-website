@@ -143,7 +143,7 @@ window.PostoSolutionAdvisor = window.PostoSolutionAdvisor || {};
     conference: { cx: 50, cy: 51, rx: 29, ry: 16, width: 58, height: 32 },
     boardroom: { cx: 50, cy: 57, rx: 17.5, ry: 30 }
   };
-  const SHOW_CONFERENCE_SEAT_FURNITURE = false;
+  const SHOW_CONFERENCE_SEAT_FURNITURE = true;
   const MEETING_STANDARD_SEAT_COUNTS = [6, 8, 10, 12, 16, 20];
   const MEETING_SEAT_RING_20 = [
     { left: 22, top: 33.4, axis: "h" },

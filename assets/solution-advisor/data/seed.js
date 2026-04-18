@@ -241,8 +241,7 @@ window.PostoSolutionAdvisor.seedData = {
     "supported_room_types": [
       "classroom",
       "training",
-      "seminar",
-      "meeting"
+      "seminar"
     ],
     "supported_platforms": [
       "zoom",
@@ -288,7 +287,7 @@ window.PostoSolutionAdvisor.seedData = {
     "ideal_room_size": "small",
     "ideal_attendee_range": [
       4,
-      20
+      12
     ],
     "features": [
       "Near-field voice pickup",
@@ -802,7 +801,24 @@ window.PostoSolutionAdvisor.seedData = {
     "id": "presenter-tracking-upgrade",
     "priority": 107,
     "conditions": {
-      "presenterTracking": true
+      "all": [
+        {
+          "field": "presenterTracking",
+          "equals": true
+        },
+        {
+          "any": [
+            {
+              "field": "hybridRequired",
+              "equals": true
+            },
+            {
+              "field": "recordingRequired",
+              "equals": true
+            }
+          ]
+        }
+      ]
     },
     "actions": {
       "remove": [
@@ -812,7 +828,7 @@ window.PostoSolutionAdvisor.seedData = {
         "ai_tracking_camera"
       ]
     },
-    "rationale": "Presenter tracking improves framing continuity during active speaking or teaching movement."
+    "rationale": "Presenter tracking upgrades the video layer when sessions are recorded or broadcast to remote participants."
   },
   {
     "id": "recording-enabled",
@@ -900,10 +916,11 @@ window.PostoSolutionAdvisor.seedData = {
         "ai_tracking_camera",
         "ceiling_mic_array",
         "audio_dsp_controller",
-        "control_touch_panel"
+        "control_touch_panel",
+        "lecture_capture_unit"
       ]
     },
-    "rationale": "Essential budget orientation prioritizes practical coverage and removes premium-only layers."
+    "rationale": "Essential budget orientation prioritizes practical coverage. Recording hardware and premium-only layers are available at Professional and Premium tiers."
   },
   {
     "id": "essential-large-display-fallback",
@@ -1027,6 +1044,122 @@ window.PostoSolutionAdvisor.seedData = {
       ]
     },
     "rationale": "Premium hybrid rooms are upgraded to AI tracking video and advanced ceiling audio capture."
+  },
+  {
+    "id": "premium-classroom-dual-display",
+    "priority": 93,
+    "conditions": {
+      "all": [
+        {
+          "field": "budgetOrientation",
+          "equals": "premium"
+        },
+        {
+          "field": "roomType",
+          "equals": "classroom"
+        },
+        {
+          "field": "roomSize",
+          "in": [
+            "medium",
+            "large"
+          ]
+        }
+      ]
+    },
+    "actions": {
+      "add": [
+        "display_75_ifp"
+      ]
+    },
+    "rationale": "Premium classrooms benefit from a secondary display for rear-of-room visibility and multi-zone content delivery."
+  },
+  {
+    "id": "recording-compute-fallback",
+    "priority": 102,
+    "conditions": {
+      "all": [
+        {
+          "field": "recordingRequired",
+          "equals": true
+        },
+        {
+          "field": "hybridRequired",
+          "equals": false
+        },
+        {
+          "field": "primaryPlatform",
+          "equals": "mixed"
+        }
+      ]
+    },
+    "actions": {
+      "add": [
+        "conferencing_compute_module"
+      ]
+    },
+    "rationale": "A dedicated compute module ensures reliable session capture regardless of the connected platform."
+  },
+  {
+    "id": "priority-prestige-control",
+    "priority": 88,
+    "conditions": {
+      "all": [
+        {
+          "field": "priorityFocus",
+          "equals": "prestige"
+        },
+        {
+          "field": "budgetOrientation",
+          "in": [
+            "professional",
+            "premium"
+          ]
+        }
+      ]
+    },
+    "actions": {
+      "add": [
+        "control_touch_panel"
+      ]
+    },
+    "rationale": "Prestige-oriented deployments benefit from centralized touch control for polished session execution."
+  },
+  {
+    "id": "priority-simplicity-no-control",
+    "priority": 91,
+    "conditions": {
+      "field": "priorityFocus",
+      "equals": "simplicity"
+    },
+    "actions": {
+      "remove": [
+        "control_touch_panel"
+      ]
+    },
+    "rationale": "Simplicity-focused setups prioritize ease of daily operation over advanced control layers."
+  },
+  {
+    "id": "priority-simplicity-wireless",
+    "priority": 90,
+    "conditions": {
+      "all": [
+        {
+          "field": "priorityFocus",
+          "equals": "simplicity"
+        },
+        {
+          "field": "wirelessPresentation",
+          "equals": false
+        }
+      ]
+    },
+    "actions": {
+      "add": [
+        "wireless_presentation_hub"
+      ]
+    },
+    "rationale": "Wireless sharing is recommended as the single highest-impact usability improvement for simplicity-focused rooms."
   }
 ]
 };

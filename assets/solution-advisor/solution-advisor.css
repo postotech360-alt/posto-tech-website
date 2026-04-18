@@ -422,6 +422,19 @@
   flex: 1;
 }
 
+.advisor-product-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.advisor-product-link:hover {
+  text-decoration: underline;
+}
+
 .advisor-product-card h4 {
   margin: 0.35rem 0 0.25rem;
   font-size: 1.05rem;
@@ -904,6 +917,17 @@
 
 .advisor-insight-row + .advisor-insight-row {
   border-top: 1px solid #f1f5f9;
+}
+
+.advisor-insight-row--info {
+  background: linear-gradient(90deg, #eff6ff 0%, #f8fbff 100%);
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.advisor-insight-row--info .advisor-insight-icon {
+  color: #2563eb;
 }
 
 .advisor-insight-icon {

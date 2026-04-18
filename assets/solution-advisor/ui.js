@@ -452,7 +452,14 @@ window.PostoSolutionAdvisor = window.PostoSolutionAdvisor || {};
       "Writing Surface": "Analog extension layer for side-by-side writing support.",
       Control: "Operational control layer for premium room management."
     };
-    return roles[category] || "Supports the overall room experience and reliability.";
+    var text = roles[category] || "Supports the overall room experience and reliability.";
+    var pf = appState.result && appState.result.answers ? appState.result.answers.priorityFocus : null;
+    if (pf === "simplicity" && category === "Collaboration") {
+      text = "Chosen for ease of use — " + text.toLowerCase();
+    } else if (pf === "prestige" && (category === "Display" || category === "Education Display" || category === "Control")) {
+      text = "Selected for premium presentation quality — " + text.toLowerCase();
+    }
+    return text;
   }
 
   function categoryHeading(category) {
@@ -546,6 +553,7 @@ window.PostoSolutionAdvisor = window.PostoSolutionAdvisor || {};
               <ul>${benefits}</ul>
             </div>
           </div>
+          <a href="products.html" class="advisor-product-link">View product family →</a>
         </div>
       </article>
     `;
@@ -745,14 +753,34 @@ window.PostoSolutionAdvisor = window.PostoSolutionAdvisor || {};
     els.productGrid.innerHTML = renderProductGroups(result.recommendedProducts);
 
     var checkIcon = '<svg xmlns="http://www.w3.org/2000/svg" class="advisor-insight-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>';
-    var rationaleItems = result.explanations
-      .slice(0, 7)
+    var infoIcon = '<svg xmlns="http://www.w3.org/2000/svg" class="advisor-insight-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>';
+
+    var sectorNotes = {
+      education: "This configuration is optimised for teaching environments — display and audio are prioritised for student-facing clarity and daily classroom reliability.",
+      enterprise: "This bundle is scoped for professional meeting environments — platform compatibility and hybrid readiness are the primary design drivers.",
+      government: "Government deployments typically prioritise reliability and manageability. This bundle avoids complexity-heavy components where a simpler solution meets the requirement.",
+      training: "Training environments benefit from flexible audio coverage and recording support. This bundle reflects those priorities."
+    };
+    var sectorNote = sectorNotes[result.answers.sector] || "";
+    var sectorHtml = sectorNote ? '<div class="advisor-insight-row advisor-insight-row--info">' + infoIcon + '<p class="advisor-insight-text">' + sectorNote + '</p></div>' : "";
+
+    var IMPORTANT_RULE_IDS = [
+      "hybrid-core-stack", "recording-enabled", "essential-guardrails",
+      "professional-tier-default", "premium-tier-enable", "premium-hybrid-video-upgrade",
+      "presenter-tracking-upgrade", "boardroom-control-layer", "priority-prestige-control",
+      "priority-simplicity-wireless"
+    ];
+    var priorityNotes = result.explanations.filter(function(e) { return IMPORTANT_RULE_IDS.indexOf(e.id) !== -1; });
+    var otherNotes = result.explanations.filter(function(e) { return IMPORTANT_RULE_IDS.indexOf(e.id) === -1; });
+    var sortedExplanations = priorityNotes.concat(otherNotes).slice(0, 5);
+
+    var rationaleItems = sortedExplanations
       .map(function(item) {
         return '<div class="advisor-insight-row">' + checkIcon + '<p class="advisor-insight-text">' + item.rationale + '</p></div>';
       })
       .join("");
 
-    els.rationaleList.innerHTML = rationaleItems || '<div class="advisor-insight-row">' + checkIcon + '<p class="advisor-insight-text">Base recommendation generated from room and usage profile.</p></div>';
+    els.rationaleList.innerHTML = sectorHtml + (rationaleItems || '<div class="advisor-insight-row">' + checkIcon + '<p class="advisor-insight-text">Base recommendation generated from room and usage profile.</p></div>');
 
     els.resultSection.classList.remove("hidden");
     void els.resultSection.offsetHeight; // force layout so board has real dimensions
@@ -925,7 +953,7 @@ window.PostoSolutionAdvisor = window.PostoSolutionAdvisor || {};
       waBtn.addEventListener("click", function () {
         if (!appState.result) return;
         var text = generateShareText(appState.result);
-        window.open("https://wa.me/?text=" + encodeURIComponent(text), "_blank", "noopener");
+        window.open("https://wa.me/923399887766?text=" + encodeURIComponent(text), "_blank", "noopener");
         if (typeof gtag !== "undefined") {
           gtag("event", "advisor_cta_clicked", { cta_type: "whatsapp_share" });
         }
